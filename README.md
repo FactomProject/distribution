@@ -6,15 +6,15 @@ Install for:
 
 | OS | Installer | sha256sum |
 |----|-----|-----|
-| Windows | FactomInstall.msi | 97359317b8fc9971432bd6e8847585b3e3c6ca2898a5cef32a5e77e4d2354143 |
-| Mac | factom.mpkg.zip | 6c60f2f3d11959936a89f124904d101e8e7a447f93376e171b7c49a9b46ad8a5 |
-| Linux (Ubuntu/Debian) | factom-i386.deb | a6d5178ab21d2274c751ca0b280d4ba5be20d1df93132fadfd2e45c36a215cf3 |
+| Windows | [FactomInstall.msi](https://github.com/FactomProject/distribution/releases/download/v0.3.6.0/FactomInstall.msi) | 97359317b8fc9971432bd6e8847585b3e3c6ca2898a5cef32a5e77e4d2354143 |
+| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.3.6.0/factom.mpkg.zip) | 6c60f2f3d11959936a89f124904d101e8e7a447f93376e171b7c49a9b46ad8a5 |
+| Linux (Ubuntu/Debian) | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.3.6.0/factom-i386.deb) | a6d5178ab21d2274c751ca0b280d4ba5be20d1df93132fadfd2e45c36a215cf3 |
 
 
-Source code archive: FactomProject_source.zip
+Source code archive: [FactomProject_source.zip](https://github.com/FactomProject/distribution/releases/download/v0.3.6.0/FactomProject_source.zip)
 
 
-##Resease notes for 0.3.6.0
+##Release notes for 0.3.6.0
 
 - Syncup Acceleration
 
@@ -24,7 +24,7 @@ Lately we had been seeing a bug where syncing the blockchain stalled out or woul
 
 - Point to trusted remote factomd
 
-Some applications would benefit from having a trusted factomd node to hold the blockchain.  Multiple clients would share a single blockchain instance.  This would allow users to trade off convience for trustlessness.  Using a trusted factomd node does not require sharing private keys, so attacks are limited with this arrangement.
+Some applications would benefit from having a trusted factomd node to hold the blockchain.  Multiple clients would share a single blockchain instance.  This would allow users to trade off convenience for trustlessness.  Using a trusted factomd node does not require sharing private keys, so attacks are limited with this arrangement.
 
 This arrangement would allow cloud service providers to host a local blockchain node which served an API to its clients.
 
@@ -32,7 +32,7 @@ This arrangement would allow cloud service providers to host a local blockchain 
 
 - Easier to setup inter-company sandbox.
 
- When a developer wants to do some local testing, they can setup a local federated server.  If they wanted a more realalistic setup, they could setup a sandbox federated server on the LAN.  To get local clients to download the blockchain from the LAN server, they would need to recompile factomd to respect the new signature.  This release gives the option in the config file to specify the local server.  See how to setup a sandbox [here](https://github.com/FactomProject/FactomDocs/blob/master/developerSandboxSetup.md).
+When a developer wants to do some local testing, they can setup a local federated server.  If they wanted a more realistic setup, they could setup a sandbox federated server on the LAN.  To get local clients to download the blockchain from the LAN server, they would need to recompile factomd to respect the new signature.  This release gives the option in the config file to specify the local server.  See how to setup a sandbox [here](https://github.com/FactomProject/FactomDocs/blob/master/developerSandboxSetup.md).
 
 
 
