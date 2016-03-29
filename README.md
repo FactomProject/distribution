@@ -9,6 +9,8 @@ Install for:
 | Windows | [FactomInstall.msi](https://github.com/FactomProject/distribution/releases/download/v0.3.6.0/FactomInstall.msi) | 97359317b8fc9971432bd6e8847585b3e3c6ca2898a5cef32a5e77e4d2354143 |
 | Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.3.6.0/factom.mpkg.zip) | 6c60f2f3d11959936a89f124904d101e8e7a447f93376e171b7c49a9b46ad8a5 |
 | Linux (Ubuntu/Debian) | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.3.6.0/factom-i386.deb) | a6d5178ab21d2274c751ca0b280d4ba5be20d1df93132fadfd2e45c36a215cf3 |
+| Linux (Redhat/Centos) | [factom-0.3.6.0-i386.rpm](https://github.com/FactomProject/distribution/releases/download/v0.3.6.0/factom-0.3.6.0-i386.rpm) | 7479beeeaa22707411260e85299014231b70d23bb193f644a222854668042f7d |
+
 
 
 Source code archive: [FactomProject_source.zip](https://github.com/FactomProject/distribution/releases/download/v0.3.6.0/FactomProject_source.zip)
