@@ -1,23 +1,25 @@
 ##Factom Binaries
 
-The latest version of Factom is Version 0.3.7.0, released 27 April 2016
+The latest version of Factom is Version 0.3.8.0, released 28 Oct, 2016
 
 Install for:
 
 | OS | Installer | sha256sum |
 |----|-----|-----|
-| Windows | [FactomInstall.msi](https://github.com/FactomProject/distribution/releases/download/v0.3.7.0/FactomInstall.msi) | 743e5b0cc65a79afe5eac8c75f4141b4edad946da67d7080aed6f3b53dbab796 |
-| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.3.7.0/factom.mpkg.zip) | 1d3d69d5f841e515128121e53018031ac1fb84f1ee8ab0e24af4b5e2a637c80b |
-| Linux (Ubuntu/Debian) | [factom.deb](https://github.com/FactomProject/distribution/releases/download/v0.3.7.0/factom.deb) | 6a7e66b8b00958cc3a1328c20a7e760d787e7addc82e617fce339d833729b983 |
-| Linux (Redhat/Centos) | Pending. See [last release](https://github.com/FactomProject/distribution/blob/9a745d8962462912ffc9b0c2b2a2fa3a231dab7b/README.md). |  |
+| Windows 64bit | [FactomInstall_64_bit.msi](https://github.com/FactomProject/distribution/releases/download/v0.3.8.0/FactomInstall_64_bit.msi) | 4b10944a36d82f22fbee837b238f09a709d6e6b13f4d9281922d1d16a8401b1b |
+| Windows 32bit | [FactomInstall_32_bit.msi](https://github.com/FactomProject/distribution/releases/download/v0.3.8.0/FactomInstall_32_bit.msi) | 391e518c6c566445058e6ce97c0efc9266e49a883823bfe4a42d09c1c7a64b75 |
+| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.3.8.0/factom.mpkg.zip) | a74a63e124268d9a31a77866a3042f0243ff0844fb6e830cb6db663ddfd8ebc9 |
+| Linux (Ubuntu/Debian) | [factom-0.3.8.0-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.3.8.0/factom-0.3.8.0-i386.deb) | 1678c91cb2593db22c9ff8e3ee223a1c60991569698b01454387941247d3b3c5 |
+| Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/communityTesterDirections.md).  |  |
+
+Install guide located [here](https://factom.com/devs/docs/howto/binaries-install-guide).
+
+Source code archive: [FactomProject_src_0.3.8.0.zip](https://github.com/FactomProject/distribution/releases/download/v0.3.8.0/FactomProject_src_0.3.8.0.zip)
 
 
+##Release notes for 0.3.8.0
 
-Source code archive: [FactomProject_source.zip](https://github.com/FactomProject/distribution/releases/download/v0.3.7.0/FactomProject_source.zip)
+- Improvements
 
+Factomd was recompiled using the latest golang 1.7.3 compiler. Using the new compiler fixes the crash when starting factomd with an already downloaded blockchain. A 64 bit windows binary is also included which may have more reliability on some systems.
 
-##Release notes for 0.3.7.0
-
-- Network Improvements
-
-Factomd was having trouble with the Great Firewall of China. We were finally able to track down what was causing factomd to fall behind from synchronization. Version 0.3.7.0 no longer falls behind when the GFW resets connections.
