@@ -27,7 +27,7 @@ On Linux and Mac, factomd would crash due to using too many open files.  This bu
 
 - Resolve Windows Database Problem
 
-Enterprise Wallet on some Windows systems would fail to start.  This problem has been solved.
+Enterprise Wallet and factom-walletd on some Windows systems would not cache factoid transactions.  This solves the User Map Restriction bug.
 
 - Networking more Resiliant
 
