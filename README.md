@@ -16,7 +16,7 @@ Install for:
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
 
-Source code archive: [FactomProject_src_0.4.0.2.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/FactomProject_src_0.4.0.2.zip)
+Source code archive: [factom_source_v0.4.0.2.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/factom_source_v0.4.0.2.zip)
 
 
 ##Release notes for 0.4.0.2
