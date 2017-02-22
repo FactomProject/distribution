@@ -6,12 +6,12 @@ Install for:
 
 | OS | Factomd Installer | Enterprise Installer | factomd sha256sum | Enterprise sha256sum |
 |----|-----|-----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi] | [enterprise-wallet-setup-amd64.exe] | xx | xx |
+| Windows 64bit | [FactomInstall-amd64.msi] | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.exe) | xx | 1e11d103da7e7b2d93c5b65c2bca9eababd08975b349b633d49681e701b18c5d |
 | Windows 32bit | [FactomInstall-i386.msi] | | xx | |
-| Mac | [factom.mpkg.zip] | [enterprise-wallet-setup.dmg] | xx | xx |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb] | [enterprise-wallet-setup-amd64.deb] | xx | xx |
+| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/factom.mpkg.zip) | [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup.dmg) | 3dea2d3c1b7e91e19acc11e5535806af2a2ea1bd1fcc409c07deced60e6e148a | 6ad2c06b05656b0fcfae75a8b4919ed3921d073d06c58698475de2a85f4d55f5 |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb] | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.deb) | xx | 29babb2a4cfb8f0f250a25bfd21ecfe34c5866d53a91a17c8a101570033252a1 |
 | Linux (Ubuntu/Debian) 32bit | [factom-i386.deb] | | xx | |
-| Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-linux.zip] | | xx |
+| Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-linux.zip) | | ba0ce2307ecaf83001ddff4b92036882e9af8036b3ee755159a2f664b3a15dfb |
 
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
@@ -36,6 +36,10 @@ Timeouts for network connections have been increased.  This gives an incremental
 - Lower CPU usage
 
 Idle time CPU usage has been decreased for times after factomd boot and syncs.
+
+- Right Click in Wallet
+
+Now the Enterprise Wallet supports right clicking for copy/pasting etc.
 
 
 
