@@ -6,12 +6,12 @@ Install for:
 
 | OS | Factomd Installer | Enterprise Installer | factomd sha256sum | Enterprise sha256sum |
 |----|-----|-----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi]() | [enterprise-wallet-setup-amd64.exe]() | xx | xx |
-| Windows 32bit | [FactomInstall-i386.msi]() | | xx | |
-| Mac | [factom.mpkg.zip]() | [enterprise-wallet-setup.dmg]() | xx | xx |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb]() | [enterprise-wallet-setup-amd64.deb]() | xx | xx |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb]() | | xx | |
-| Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-linux.zip]() | | xx |
+| Windows 64bit | [FactomInstall-amd64.msi] | [enterprise-wallet-setup-amd64.exe] | xx | xx |
+| Windows 32bit | [FactomInstall-i386.msi] | | xx | |
+| Mac | [factom.mpkg.zip] | [enterprise-wallet-setup.dmg] | xx | xx |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb] | [enterprise-wallet-setup-amd64.deb] | xx | xx |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb] | | xx | |
+| Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-linux.zip] | | xx |
 
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
