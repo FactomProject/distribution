@@ -1,14 +1,14 @@
-##Factom Binaries
+## Factom Binaries
 
-The latest version of Factom is Version 0.4.0.2, released 21 Feb, 2017
+The latest version of Factom is Version 0.4.1.0, released 23 April, 2017:
 
 Install for:
 
 | OS | Factomd Installer | Enterprise Installer | factomd sha256sum | Enterprise sha256sum |
 |----|-----|-----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/FactomInstall-amd64.msi) | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.exe) | 459b5efd2b531b5190b92527a504a8439576c3ced1754f35e8f2fd73b138a1f2 | 1e11d103da7e7b2d93c5b65c2bca9eababd08975b349b633d49681e701b18c5d |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/FactomInstall-i386.msi) | | 08eba516046d6c5fa174080e28a6a61816962fe08fb32343a222d4a3e0aa05ab | |
-| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/factom.mpkg.zip) | [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup.dmg) | 3dea2d3c1b7e91e19acc11e5535806af2a2ea1bd1fcc409c07deced60e6e148a | 6ad2c06b05656b0fcfae75a8b4919ed3921d073d06c58698475de2a85f4d55f5 |
+| Windows 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.exe) | 459b5efd2b531b5190b92527a504a8439576c3ced1754f35e8f2fd73b138a1f2 | 1e11d103da7e7b2d93c5b65c2bca9eababd08975b349b633d49681e701b18c5d |
+| Windows 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | | 08eba516046d6c5fa174080e28a6a61816962fe08fb32343a222d4a3e0aa05ab | |
+| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup.dmg) | 3dea2d3c1b7e91e19acc11e5535806af2a2ea1bd1fcc409c07deced60e6e148a | 6ad2c06b05656b0fcfae75a8b4919ed3921d073d06c58698475de2a85f4d55f5 |
 | Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.deb) | | 29babb2a4cfb8f0f250a25bfd21ecfe34c5866d53a91a17c8a101570033252a1 |
 | Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | | | |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-linux.zip) | | ba0ce2307ecaf83001ddff4b92036882e9af8036b3ee755159a2f664b3a15dfb |
@@ -16,10 +16,37 @@ Install for:
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
 
-Source code archive: [factom_source_v0.4.0.2.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/factom_source_v0.4.0.2.zip)
+Source code archive: pending
+
+## Release notes for v0.4.1.0
+
+This is a required upgrade.  Older versions of software will not download new blocks from the network.
+
+- Large fix for network connection problems
+- Prioritized Directory Block and Factoid Block downloading over Entry downloading.  This is apparent when viewing the control panel 1st and 2nd pass.
+- Limitations on outgoing peers
+- reduce outgoing message traffic
+- add computed balance messaging to prevent out-of sync balances (thanks to [34ro](https://github.com/34ro) for reporting the error)
+- add prometheus logging for nice graphana performance graphs
+- expose API for checking leader status
+- add API call to get network transaction rate
+- Database consistency fixes
+- updated leveldb to include upstream fixes
 
 
-##Release notes for 0.4.0.2
+Known issues:
+- If an earlier version of factomd was run, it may have corrupted your local database.  If you are seeing panics as you are booting the latest factomd, the safest fix is to delete (or rename) your ~/.factom/m2/main-database folder
+- On machines with 4GB or less of RAM, memory spikes have been observed which cause the OS to stop factomd while downloading the blockchain.
+
+
+## Release notes for v0.4.0.3
+
+- This latest update fixes some consistency bugs.  It is more aggressive in filling in gaps introduced when synching the blockchain with marginal network connections.  This fixes some problems people were seeing with missing entries. (factoid transactions did not fall under this bug)
+- This updates to Golang 1.8, which gives better garbage collection.
+- Added some stabilization of the network connectivity.
+
+
+## Release notes for 0.4.0.2
 
 - Resolve "too many files" error
 
