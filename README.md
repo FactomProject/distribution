@@ -1,6 +1,13 @@
 ## Factom Binaries
 
-The latest version of Factom is Version 0.4.1.0, released 23 April, 2017:
+**Note: Deployment of v0.3.1.0 is taking longer than expected.  Until further notice, use v0.4.0.3 which can be installed with these commands after installing from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md).**
+```
+cd $GOPATH/src/github.com/FactomProject/factomd
+git checkout v0.4.0.3
+glide install
+go install -v -ldflags "-X github.com/FactomProject/factomd/engine.Build=`git rev-parse HEAD`"
+```
+
 
 Install for:
 
