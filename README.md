@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-**Note: Deployment of v0.3.1.0 is taking longer than expected.  Until further notice, use v0.4.0.3 which can be installed with these commands after installing from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md).**
+**Note: Deployment of v0.4.1.0 is taking longer than expected.  Until further notice, use v0.4.0.3 which can be installed with these commands after installing from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md).**
 ```
 cd $GOPATH/src/github.com/FactomProject/factomd
 git checkout v0.4.0.3
