@@ -1,12 +1,6 @@
 ## Factom Binaries
 
-**Note: Deployment of v0.4.1.0 is taking longer than expected.  Until further notice, use v0.4.0.3 which can be installed with these commands after installing from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md).**
-```
-cd $GOPATH/src/github.com/FactomProject/factomd
-git checkout v0.4.0.3
-glide install
-go install -v -ldflags "-X github.com/FactomProject/factomd/engine.Build=`git rev-parse HEAD`"
-```
+The latest version of Factom is Version 0.4.1.1, released 24 April, 2017:
 
 
 Install for:
@@ -25,9 +19,15 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 Source code archive: pending
 
+
+## Release notes for v0.4.1.1
+- This fixes a problem which causes network disconnections when many peers are connecting to a node.
+- Increase the broadcast rate of p2p messages
+
+
 ## Release notes for v0.4.1.0
 
-This is a required upgrade.  Older versions of software will not download new blocks from the network.
+**This is a required upgrade.**  Older versions of software will not download new blocks from the network.
 
 - Large fix for network connection problems
 - Prioritized Directory Block and Factoid Block downloading over Entry downloading.  This is apparent when viewing the control panel 1st and 2nd pass.
