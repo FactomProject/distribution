@@ -1,23 +1,28 @@
 ## Factom Binaries
 
-The latest version of Factom is Version 0.4.1.1, released 24 April, 2017:
+The latest version of Factom is Version 0.4.1.2, released 27 April, 2017:
 
 
 Install for:
 
 | OS | Factomd Installer | Enterprise Installer | factomd sha256sum | Enterprise sha256sum |
 |----|-----|-----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.1.1/FactomInstall-amd64.msi) | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.exe) | 1ef578393a0dcdcec5de3ca0a4ced84ec640213f3b86b3d59a809b011cd8674e | 1e11d103da7e7b2d93c5b65c2bca9eababd08975b349b633d49681e701b18c5d |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.1.1/FactomInstall-i386.msi)  | | c4700e70f59d0573a14e6b8bc7b502fddf4a6c18ece85a4f034522fbac4726ab | |
-| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.1.1/factom.mpkg.zip) | [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup.dmg) | f5b3fa5fdb3323827469a309af193eb7ce9b2d1db72dc5f704f9aab1f6ba3787 | 6ad2c06b05656b0fcfae75a8b4919ed3921d073d06c58698475de2a85f4d55f5 |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.1.1/factom-amd64.deb) | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.deb) | fd8d10ea7ab067bc32730e46797d0191450b24036b476e79fe991a68f143fc9a | 29babb2a4cfb8f0f250a25bfd21ecfe34c5866d53a91a17c8a101570033252a1 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.1.1/factom-i386.deb) | | dd7e68c6b82aeb0f3c8580fa624754434fdf30abeb47252598ac8a91da24203c | |
+| Windows 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.exe) |   | 1e11d103da7e7b2d93c5b65c2bca9eababd08975b349b633d49681e701b18c5d |
+| Windows 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md).  | | c4700e70f59d0573a14e6b8bc7b502fddf4a6c18ece85a4f034522fbac4726ab | |
+| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup.dmg) |   | 6ad2c06b05656b0fcfae75a8b4919ed3921d073d06c58698475de2a85f4d55f5 |
+| Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.deb) |   | 29babb2a4cfb8f0f250a25bfd21ecfe34c5866d53a91a17c8a101570033252a1 |
+| Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | |  | |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-linux.zip) | | ba0ce2307ecaf83001ddff4b92036882e9af8036b3ee755159a2f664b3a15dfb |
 
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
 
-Source code archive: [factom_source_v0.4.1.1.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.1.1/factom_source_v0.4.1.1.zip)
+Source code archive: [factom_source_v0.4.1.2.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.1.2/factom_source_v0.4.1.2.zip)
+
+## Release notes for v0.4.1.2
+- This improves some network message management.
+- Improve handling of entries over the p2p network
+- Added some instrumentation
 
 
 ## Release notes for v0.4.1.1
