@@ -19,6 +19,14 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 Source code archive: [factom_source_v0.4.2.0.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.0/factom_source_v0.4.2.0.zip)
 
+## Release notes for v0.4.2.1
+- This is a feature preview of the fast bootup mode.
+- Upgrade is only needed to try the new mode.
+- With this version, when booting after downloading the blockchain, factomd will save most of the work it does when starting.  When starting again, it will fully startup much faster.
+- To try, start with this command `factomd -fast=true`
+- This release does not include any bugfixes beyond what 0.4.2.0 fixed.
+
+
 ## Release notes for v0.4.2.0
 - Better discovery of the highest block.
 - Catches up to highest block more quickly from 1-2 blocks behind.
