@@ -26,6 +26,8 @@ Source code archive: [factom_source_v0.4.2.0.zip](https://github.com/FactomProje
 - To try, start with this command `factomd -fast=true`
 - This release does not include any bugfixes beyond what 0.4.2.0 fixed.
 
+See [here](https://github.com/FactomProject/distribution/releases/tag/v0.4.2.1) for v0.4.2.1 binaries
+
 
 ## Release notes for v0.4.2.0
 - Better discovery of the highest block.
