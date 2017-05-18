@@ -27,7 +27,7 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 ![Factom CLI apps](img/factomd.png)
 
 | OS | Factomd Installer | sha256sum |
-|----|-----|-----|-----|-----|
+|----|-----|-----|
 | Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/FactomInstall-amd64.msi) | 6a74b422d6d3647f1bb78c6c4e8d8a3996425903235489ba2fb65fc8ad243939 |
 | Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/FactomInstall-i386.msi)  | 42fcbd27acfe93bb5ec349d87745b134144c392d8e6af12e91d6e64611f74f37 |
 | Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/factom.mpkg.zip) | 1ff6313a1d922661a12b06bfdb0bef2f51706146877da74695af0753f69c573a |
