@@ -1,25 +1,45 @@
 ## Factom Binaries
 
-The latest version of Factom is Version 0.4.2.0, released 8 May, 2017:
-
-
-Install for:
-
-| OS | Factomd Installer | Enterprise Installer | factomd sha256sum | Enterprise sha256sum |
-|----|-----|-----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.0/FactomInstall-amd64.msi) | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.exe) | ebada733dfedc860341c3423057ea504c017be4b8e37759060f99e694a38d8de | 1e11d103da7e7b2d93c5b65c2bca9eababd08975b349b633d49681e701b18c5d |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.0/FactomInstall-i386.msi)  | | 5f4e4e433f0dacb37bd74149454e68cbe85eacbbb8a9f47c73bab94be9195b66 | |
-| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.0/factom.mpkg.zip). | [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup.dmg) | 13215583c1706f1185e5d7408971bb5b44aeea079b406cf52c6726ef6401c5af | 6ad2c06b05656b0fcfae75a8b4919ed3921d073d06c58698475de2a85f4d55f5 |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.0/factom-amd64.deb) | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-setup-amd64.deb) | 440748d512826cc0802da7aa83f225800690df1eca8d9522be09f26c2edff31c | 29babb2a4cfb8f0f250a25bfd21ecfe34c5866d53a91a17c8a101570033252a1 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.0/factom-i386.deb) | | 9e1c406ef7d3f2a9c4feec6a053afc492de22dea31442b64e69482a110f43a3b | |
-| Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md). | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.0.2/enterprise-wallet-linux.zip) | | ba0ce2307ecaf83001ddff4b92036882e9af8036b3ee755159a2f664b3a15dfb |
-
+The latest version of Factom is Version 0.4.2.1, released 12 May, 2017
+The latest version of Enterprise Wallet is Version 0.1.2, released 18 May, 2017
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
 
-Source code archive: [factom_source_v0.4.2.0.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.0/factom_source_v0.4.2.0.zip)
+![Enterprise Wallet](img/enterprise.png)
 
-## Release notes for v0.4.2.1
+### Factom Enterprise Wallet
+
+| OS | Enterprise Installer | sha256sum |
+|----|-----|-----|
+| Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/enterprise-wallet-setup-amd64.exe) | f9d24e39c86ba0de0a2a4326670f4c1634797638a5f0006fdf3913e2df29c3dc |
+| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/enterprise-wallet-setup.dmg) | 4805c5fd7f4d54e123327b51130c30b78baea54fcc463b3a9631078ec461f953 |
+| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/enterprise-wallet-setup-amd64.deb) | 31d563deae91513e9fdede8a7a57754f0c112de0a4ec3947de99f5793d6ec33c |
+| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/enterprise-wallet-linux.zip) | 1d3d0dd00f61658f36ae5b1400f0219722ea1a9677283db81777dd6fb067ad1d |
+
+#### Release notes for v0.1.2
+- GUI now remains responsive with slow API responses
+
+
+
+
+### Factom Command Line Interface Programs
+
+![Factom CLI apps](img/factomd.png)
+
+| OS | Factomd Installer | sha256sum |
+|----|-----|-----|-----|-----|
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/FactomInstall-amd64.msi) | 6a74b422d6d3647f1bb78c6c4e8d8a3996425903235489ba2fb65fc8ad243939 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/FactomInstall-i386.msi)  | 42fcbd27acfe93bb5ec349d87745b134144c392d8e6af12e91d6e64611f74f37 |
+| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/factom.mpkg.zip) | 1ff6313a1d922661a12b06bfdb0bef2f51706146877da74695af0753f69c573a |
+| Linux (Ubuntu/Debian) 64bit | Installer pending. Try source or [earlier release](https://github.com/FactomProject/distribution/tree/2879b1ffc3df51dd3c7de6af2d215dde7e23f3cd) |  |
+| Linux (Ubuntu/Debian) 32bit | Installer pending. Try source or [earlier release](https://github.com/FactomProject/distribution/tree/2879b1ffc3df51dd3c7de6af2d215dde7e23f3cd) |  |
+| Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
+
+
+
+Source code archive: [factom_source_v0.4.2.1.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/factom_source_v0.4.2.1.zip)
+
+#### Release notes for v0.4.2.1
 - This is a feature preview of the fast bootup mode.
 - Upgrade is only needed to try the new mode.
 - With this version, when booting after downloading the blockchain, factomd will save most of the work it does when starting.  When starting again, it will fully startup much faster.
