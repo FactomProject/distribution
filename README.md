@@ -31,9 +31,9 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 |----|-----|-----|
 | Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/FactomInstall-amd64.msi) | 1de7d4356b44a1031d301d840d11c21d10bcb40c6f5bf6d8772220b4de0a8d5b |
 | Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/FactomInstall-i386.msi)  | 6566c253f1650bfc2628b1d569e7f4dd687a9aa8deddd248f98b555041adf1a3 |
-| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [previous release](https://github.com/FactomProject/distribution/blob/eea394103d429f76692b142fb84168715c925c68/README.md) |  |
-| Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [previous release](https://github.com/FactomProject/distribution/blob/eea394103d429f76692b142fb84168715c925c68/README.md) |  |
-| Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [previous release](https://github.com/FactomProject/distribution/blob/eea394103d429f76692b142fb84168715c925c68/README.md) |  |
+| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/factom.mpkg.zip) | 0c2668a849cb5064625e2b748d247fd293e5d19e303f903dbaffc5ad93eaf4d9 |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/factom-amd64.deb) | e7cb8c24bec50362e118ebc14f530a705a62a582c60ecfd8be3ba85f8cc8003e |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/factom-i386.deb) | 186bc37cf682606ead1a3ec80236fce9ff59196632d31bb9d1d1a5cbf8b4bf5b |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
