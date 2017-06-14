@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is Version **0.4.2.2**, released **26 May, 2017**
+The latest version of Factom is version **0.4.2.3**, released **13 June, 2017**
 
 The latest version of Enterprise Wallet is Version **0.1.2**, released **18 May, 2017**
 
@@ -29,18 +29,27 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/FactomInstall-amd64.msi) | 1de7d4356b44a1031d301d840d11c21d10bcb40c6f5bf6d8772220b4de0a8d5b |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/FactomInstall-i386.msi)  | 6566c253f1650bfc2628b1d569e7f4dd687a9aa8deddd248f98b555041adf1a3 |
-| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/factom.mpkg.zip) | 0c2668a849cb5064625e2b748d247fd293e5d19e303f903dbaffc5ad93eaf4d9 |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/factom-amd64.deb) | e7cb8c24bec50362e118ebc14f530a705a62a582c60ecfd8be3ba85f8cc8003e |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/factom-i386.deb) | 186bc37cf682606ead1a3ec80236fce9ff59196632d31bb9d1d1a5cbf8b4bf5b |
+| Windows 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/355fdb14fa1c7d36030257a355f587e2fef8405c/README.md) |  |
+| Windows 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/355fdb14fa1c7d36030257a355f587e2fef8405c/README.md)  |  |
+| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/355fdb14fa1c7d36030257a355f587e2fef8405c/README.md) |  |
+| Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/355fdb14fa1c7d36030257a355f587e2fef8405c/README.md) |  |
+| Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/355fdb14fa1c7d36030257a355f587e2fef8405c/README.md) |  |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
 
-Source code archive: [factom_source_v0.4.2.2.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.2/factom_source_v0.4.2.2.zip)
+Source code archive: [factom_source_v0.4.2.3.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.3/factom_source_v0.4.2.3.zip)
 
-#### Release notes for v0.4.2.2
+## Release notes for v0.4.2.3
+- [Fix] Fixed a bug which prevented nodes from processing messages following initial blockchain download.
+- [Fix] Speedup boot while synching by ignoring messages which won't affect the state.
+- [Fix] Now discard dbsig messages which will never become valid, and handle potential collisions better.
+- [Fix] Handle EOM messages better with an invalid signature.
+- [New] Chain creation in wallet API now no longer forces user calculation of the ChainID.
+- [New] Add more historical checkpoints.
+- [New] Protect users from paying too many entry credits for an entry.
+
+## Release notes for v0.4.2.2
 - Fast bootup mode is now enabled by default.  Factomd will complete the startup process faster after booting with a previously downloaded blockchain.  (To disable this feature, start factomd with -fast=false)
 - The P2P connection is now less likely to be dropped with low numbers of peers.
 - Entry acknowledgement feedback is now more likely to succeed between minute 0 and 1 of block creation.
@@ -48,7 +57,7 @@ Source code archive: [factom_source_v0.4.2.2.zip](https://github.com/FactomProje
 - More instrumentation of the API accessors
 - more fidelity of loading metrics from the database
 
-#### Release notes for v0.4.2.1
+## Release notes for v0.4.2.1
 - This is a feature preview of the fast bootup mode.
 - Upgrade is only needed to try the new mode.
 - With this version, when booting after downloading the blockchain, factomd will save most of the work it does when starting.  When starting again, it will fully startup much faster.
