@@ -1,8 +1,8 @@
 ## Factom Binaries
 
-The latest version of Factom is version **0.4.2.3**, released **13 June, 2017**
+The latest version of Factom is version **0.4.2.4**, released **23 June, 2017**
 
-The latest version of Enterprise Wallet is Version **0.1.2**, released **18 May, 2017**
+The latest version of Enterprise Wallet is Version **0.1.3**, released **23 May, 2017**
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
 
@@ -12,10 +12,17 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 | OS | Enterprise Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/enterprise-wallet-setup-amd64.exe) | f9d24e39c86ba0de0a2a4326670f4c1634797638a5f0006fdf3913e2df29c3dc |
-| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/enterprise-wallet-setup.dmg) | 4805c5fd7f4d54e123327b51130c30b78baea54fcc463b3a9631078ec461f953 |
-| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/enterprise-wallet-setup-amd64.deb) | 31d563deae91513e9fdede8a7a57754f0c112de0a4ec3947de99f5793d6ec33c |
-| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.1/enterprise-wallet-linux.zip) | 1d3d0dd00f61658f36ae5b1400f0219722ea1a9677283db81777dd6fb067ad1d |
+| Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup-amd64.exe) | 7af0bc0e42481ee5241dbabbcd1ff7a986cb6c05287b864e1e8fbc68b7f614f1 |
+| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup.dmg) | 7af0bc0e42481ee5241dbabbcd1ff7a986cb6c05287b864e1e8fbc68b7f614f1 |
+| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup-amd64.deb) | 7af0bc0e42481ee5241dbabbcd1ff7a986cb6c05287b864e1e8fbc68b7f614f1 |
+| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-linux.zip) | 7af0bc0e42481ee5241dbabbcd1ff7a986cb6c05287b864e1e8fbc68b7f614f1 |
+
+
+#### Release notes for v0.1.3
+- [fix] An error regarding the wallet's sync status was showing despite the wallet saying 100% synced. This message would only go away when factomd's second pass hit 100%. This has been rectified.
+- [fix] The screen appearing blank/freezing when editing an address has been fixed. All addresses will have special characters in their names replaced with '_'
+- [new] The courtesy remote node has a new domain, all users using factomd-live.cloudapp.net will automatically be updated to courtesy-node.factom.com.
+- [new] The courtesy remote node will now be the default blockchain target.  This will help new users with getting started.
 
 #### Release notes for v0.1.2
 - GUI now remains responsive with slow API responses
@@ -29,16 +36,24 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.3/FactomInstall-amd64.msi) | 35fbc2e5a53deca50c8cba1783e927be5561fae9732ed0ffd6173a225c1c38ab |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.3/FactomInstall-i386.msi)  | f52e65a93559114719644db8708a311fc27bc4d91d03e13bfa0b300e14f6a70a |
-| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.3/factom.mpkg.zip) | 587964b3d9a4f52b3d4aa4a3e13b007d7257a3052ccf8c913a499db5fb935c6d |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.3/factom-amd64.deb) | fb6adf5eab4f17127e66d9ec70b1188ad69f8eac22ff1bc4db6c01b82904f465 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.3/factom-i386.deb) | 99a48af29fd881af829a4db1030099fec32f3af61970717ef3dbd1ce9de8d548 |
+|----|-----|-----|
+| Windows 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
+| Windows 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md)  |  |
+| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
+| Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
+| Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
 
-Source code archive: [factom_source_v0.4.2.3.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.3/factom_source_v0.4.2.3.zip)
+Source code archive: [factom_source_v0.4.2.4.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/factom_source_v0.4.2.4.zip)
+
+
+## Release notes for v0.4.2.3
+- [fix] Don't save unverified ancillary data received from a misbehaving peer
+- [new] Create utility to fix corrupted database chain heads
+- [fix] Immediately flush DBstates that will never become valid
+- [fix] Improve order of operations when saving DBstates with an incomplete process list
 
 ## Release notes for v0.4.2.3
 - [Fix] Fixed a bug which prevented nodes from processing messages following initial blockchain download.
