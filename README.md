@@ -36,7 +36,6 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-|----|-----|-----|
 | Windows 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
 | Windows 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md)  |  |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
@@ -49,7 +48,7 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 Source code archive: [factom_source_v0.4.2.4.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/factom_source_v0.4.2.4.zip)
 
 
-## Release notes for v0.4.2.3
+## Release notes for v0.4.2.4
 - [fix] Don't save unverified ancillary data received from a misbehaving peer
 - [new] Create utility to fix corrupted database chain heads
 - [fix] Immediately flush DBstates that will never become valid
