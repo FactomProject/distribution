@@ -13,9 +13,9 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 | OS | Enterprise Installer | sha256sum |
 |----|-----|-----|
 | Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup-amd64.exe) | 7af0bc0e42481ee5241dbabbcd1ff7a986cb6c05287b864e1e8fbc68b7f614f1 |
-| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup.dmg) | 7af0bc0e42481ee5241dbabbcd1ff7a986cb6c05287b864e1e8fbc68b7f614f1 |
-| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup-amd64.deb) | 7af0bc0e42481ee5241dbabbcd1ff7a986cb6c05287b864e1e8fbc68b7f614f1 |
-| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-linux.zip) | 7af0bc0e42481ee5241dbabbcd1ff7a986cb6c05287b864e1e8fbc68b7f614f1 |
+| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup.dmg) | 2b3235ea8b9f1218caf14fe2a85234a33820dd96ec9107e6ca6adcbb28ef2587 |
+| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup-amd64.deb) | 00921ae97f3234cfe01511c72605b5e15f87d09be6fc7c2b232eb2a37a64507f |
+| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-linux.zip) | 969d8551fa060f4d6de4be156aaac7003eff2895a82475fb8e6ac29f2de5ee69 |
 
 
 #### Release notes for v0.1.3
