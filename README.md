@@ -12,11 +12,14 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 | OS | Enterprise Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup-amd64.exe) | 7af0bc0e42481ee5241dbabbcd1ff7a986cb6c05287b864e1e8fbc68b7f614f1 |
-| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup.dmg) | 2b3235ea8b9f1218caf14fe2a85234a33820dd96ec9107e6ca6adcbb28ef2587 |
-| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup-amd64.deb) | 00921ae97f3234cfe01511c72605b5e15f87d09be6fc7c2b232eb2a37a64507f |
-| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-linux.zip) | 969d8551fa060f4d6de4be156aaac7003eff2895a82475fb8e6ac29f2de5ee69 |
+| Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup-amd64.exe) | 4822aeff023c90f74be1df5efdf2fe942ba0a1eca1ca11b2bb1d8951db10a60f |
+| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup.dmg) | 91b9ff35e0152198142b407fd53524c4fe0edb117ad7fe431c48316008764a3b |
+| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-setup-amd64.deb) | 5dd00ba90fabc1a89da97eb5ca003dbef2b0324dd6847475c28e5537866ae717 |
+| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/enterprise-wallet-linux.zip) | 039f7e025c1faf874eca871f2dd4f061f57ee18d1c579263d935a503426289f1 |
 
+
+#### Release notes for v0.1.3.1
+- [fix] Now able to enter a "." character to increase precision of a factoid sending transaction.
 
 #### Release notes for v0.1.3
 - [fix] An error regarding the wallet's sync status was showing despite the wallet saying 100% synced. This message would only go away when factomd's second pass hit 100%. This has been rectified.
