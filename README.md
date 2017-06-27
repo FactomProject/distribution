@@ -2,7 +2,7 @@
 
 The latest version of Factom is version **0.4.2.4**, released **23 June, 2017**
 
-The latest version of Enterprise Wallet is Version **0.1.3**, released **23 May, 2017**
+The latest version of Enterprise Wallet is Version **0.1.3.1**, released **26 May, 2017**
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
 
