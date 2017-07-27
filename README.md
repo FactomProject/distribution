@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **0.4.2.4**, released **23 June, 2017**
+The latest version of Factom is version **0.4.2.6**, released **26 July, 2017**
 
 The latest version of Enterprise Wallet is Version **0.1.3.1**, released **26 June, 2017**
 
@@ -39,17 +39,33 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/FactomInstall-amd64.msi) | 0514854f94307fc39dc5b584f04a1e5514f1fd5cf8deee6d06a43bf3ddab09dc |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/FactomInstall-i386.msi)  | 8019da8dae4b7baf87467ca515792d0a29587a6a53623677189aa4311e43cdc4 |
-| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/factom.mpkg.zip) | 46f17f71be2e81edd63fe6315a48369374fe5d6c12e789468f661dfc942d04d0 |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/FactomInstall-amd64.msi) | b38a7ef8b27459e40434c58769be5790697886aa7e3998df38d5e09a14d423e5 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/FactomInstall-i386.msi)  | 3355018e8caafb7180852ac4a226751737724e838d4c9b34bfa379f87a76905c |
+| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
 | Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
 | Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
 
-Source code archive: [factom_source_v0.4.2.4.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.4/factom_source_v0.4.2.4.zip)
+Source code archive: [factom_source_v0.4.2.6.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/factom_source_v0.4.2.6.zip)
 
+## Release notes for v0.4.2.6
+- [fix] better handling of Chain Heads between creation and when an Entry Block is made
+- [fix] ignore duplicate commits which pay for a disallowed duplicate reveal
+- [fix] resolved a bug where more commits could be acknowledged than the net Entry Credits should have allowed
+- [fix] remove CPU overload when factomd is run in container with "-nosim=true" flag
+- [new] framework for supporting additional plugins
+- [new] add support for logrus for better log handling
+- [new] add additional Prometheus instrumentation across various functions
+- [new] add new API calls "admin-block", "factoid-block", "entrycredit-block" which output unmarshaled versions of those blocks
+- [new] add "ack" api call which takes a ChainID, setting the stage to accommodate nodes that only download some chains
+
+## Release notes for v0.4.2.5
+- [new] Added 'current-minute' API to check status of factomd node, enabling faster detection of stalls
+- [new] Added addresses of inputs and outputs of factoid transactions to 'pendingtransactions' API and factom-cli call
+- [new] Better logging infrastructure for debugging at scale
+- [fix] Stop leaders from stalling when restarting after a fault
 
 ## Release notes for v0.4.2.4
 - [fix] Don't save unverified ancillary data received from a misbehaving peer
