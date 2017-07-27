@@ -41,7 +41,7 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 |----|-----|-----|
 | Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/FactomInstall-amd64.msi) | b38a7ef8b27459e40434c58769be5790697886aa7e3998df38d5e09a14d423e5 |
 | Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/FactomInstall-i386.msi)  | 3355018e8caafb7180852ac4a226751737724e838d4c9b34bfa379f87a76905c |
-| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
+| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/factom.mpkg.zip) | 8e8d3080412be0d1141f97191c1160ef51f1ed96ea9dc80d5a1f0c623899e40c |
 | Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
 | Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use last [release](https://github.com/FactomProject/distribution/blob/b6b0aad61df30816f673ede1d1fb682cabd8e30a/README.md) |  |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
