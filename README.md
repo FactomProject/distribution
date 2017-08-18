@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **0.4.2.6**, released **26 July, 2017**
+The latest version of Factom is version **0.4.2.7**, released **12 August, 2017**
 
 The latest version of Enterprise Wallet is Version **0.1.3.1**, released **26 June, 2017**
 
@@ -39,16 +39,25 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/FactomInstall-amd64.msi) | b38a7ef8b27459e40434c58769be5790697886aa7e3998df38d5e09a14d423e5 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/FactomInstall-i386.msi)  | 3355018e8caafb7180852ac4a226751737724e838d4c9b34bfa379f87a76905c |
-| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/factom.mpkg.zip) | 8e8d3080412be0d1141f97191c1160ef51f1ed96ea9dc80d5a1f0c623899e40c |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/factom-amd64.deb) | 7ffd2be71c716b4e22ba1fac151547d8b66efc5e66cab4522ac326215adfdd6e |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/factom-i386.deb) | 61334188e00af5812a47ca5f584924fca6c7d8032e50dff5504de8017c58cc85 |
+| Windows 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) |  |
+| Windows 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md)  |  |
+| Mac | [factom.mpkg.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.7/factom.mpkg.zip) | 4b5b63a083e4bb1e541f31007098a6ebc659bd83107979136071987d74e44fc1 |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.7/factom-amd64.deb) | 2a7fbcbdce1d60963c9928e263f07939b14e1ad9886d8d035652611bcedf8271 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.7/factom-i386.deb) | 7b5668e68edb9786d01f746b42d31886c0a780103cf03df61420a2ce148daafb |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
 
-Source code archive: [factom_source_v0.4.2.6.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.6/factom_source_v0.4.2.6.zip)
+Source code archive: [factom_source_v0.4.2.7.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.7/factom_source_v0.4.2.7.zip)
+
+## Release notes for v0.4.2.7
+- [new] added FACTOM_HOME environment variable or -factomhome flag for .factom directory
+- [fix] reduced load on api of factom-walletd under heavy traffic
+- [fix] updated savestate to correct potential balance corruption
+- [new] improved authority management code in factomd
+- [new] added config option -exp for enabling profiling from non-localhost
+- [new] update Entry Credit Block API response
+- [fix] correct a printout for negative numbers in factom-cli
 
 ## Release notes for v0.4.2.6
 - [fix] better handling of Chain Heads between creation and when an Entry Block is made
