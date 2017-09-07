@@ -19,7 +19,11 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 
 #### Release notes for v0.2.0.0
-- See blog post for details.
+- [new] added a password protected, encrypted wallet option
+- [new] revamped the seed backup and restore processes, no longer exposing their 12 words on the user's hard drive
+- [new] a fresh coat of paint! Cleaned up portions of the UI
+
+See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for details.
 
 #### Release notes for v0.1.3.1
 - [fix] Now able to enter a "." character to increase precision of a factoid sending transaction.
