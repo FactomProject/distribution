@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **0.4.2.8**, released **30 August, 2017**
+The latest version of Factom is version **0.4.2.10**, released **22 September, 2017**
 
 The latest version of Enterprise Wallet is Version **0.2.0.0**, released **7 September, 2017**
 
@@ -49,19 +49,32 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 | Windows 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/eca929370f214426751f261477c1b69ec989d698/README.md#factom-command-line-interface-programs) |  |
 | Windows 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/eca929370f214426751f261477c1b69ec989d698/README.md#factom-command-line-interface-programs) |  |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/004d0b75082255ef26b608c857c9f598d18c7f9d/README.md#factom-command-line-interface-programs) |  |
-| Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](hhttps://github.com/FactomProject/distribution/blob/004d0b75082255ef26b608c857c9f598d18c7f9d/README.md#factom-command-line-interface-programs) |  |
-| Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/004d0b75082255ef26b608c857c9f598d18c7f9d/README.md#factom-command-line-interface-programs) |  |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.10/factom-amd64.deb) | 348422b6f86faebc9e895f512ecbc36099d15bac99cfdebe61e8103114d4f96e |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.10/factom-i386.deb) | 644c4ddffae2f1e20f076f547ebf8ee1771230429b7fa212f000ec9b5aab7ea2 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
 
-Source code archive: [factom_source_v0.4.2.8.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.8/factom_source_v0.4.2.8.zip)
+Source code archive: [factom_source_v0.4.2.10.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.10/factom_source_v0.4.2.10.zip)
+
+
+## Release notes for v0.4.2.10
+- [fix] Reconfigured internal handling of API processing JSON fields to ensure consistency
+- [fix] Internal state hash now reports accurately when used with savestate
+- [fix] Improved efficiency by recalculating block state only once per block
+- [new] Expanded automated test coverage over more error conditions
+
+## Release notes for v0.4.2.9
+- [new] we are now fully golang 1.9 compatible!
+- [new] added -l flag on factom-walletd to enable use of level db - this is suggested for wallets with hundreds or more addresses
+- [fix] fixed bug in compose-chain API call of factom-walletd to now give accurate feedback
+- [fix] fixed bug handling stdin inputs seen when run in docker
+- [fix] updated the GetPendingEntries, GetPendingTransactions to return standardized outputs
 
 ## Release notes for v0.4.2.8
 - [new] Added ability to suppress raw data when printing blocks with -r flag
 - [new] Shifted to CircleCI for automated testing.
 - [fix] Updated Pending Entries duplicate checking
-
 
 ## Release notes for v0.4.2.7
 - [new] added FACTOM_HOME environment variable or -factomhome flag for .factom directory
