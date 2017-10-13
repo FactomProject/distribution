@@ -46,11 +46,11 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/tree/db0bb012e597f497d7a7dd3b091d20ee5592f063#factom-command-line-interface-programs) |  |
-| Windows 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/tree/db0bb012e597f497d7a7dd3b091d20ee5592f063#factom-command-line-interface-programs) |  |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/FactomInstall-amd64.msi) | f5b92e74345d685b55d7d37a1d53a68464af014643efb9a76f1b3aa2e99085f7 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/FactomInstall-i386.msi) | 863feb84453d00a05453bf031fb865ad82d3b2e44e760df3da54bac66206afb6 |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/004d0b75082255ef26b608c857c9f598d18c7f9d/README.md#factom-command-line-interface-programs) |  |
-| Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/tree/db0bb012e597f497d7a7dd3b091d20ee5592f063#factom-command-line-interface-programs) |  |
-| Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/tree/db0bb012e597f497d7a7dd3b091d20ee5592f063#factom-command-line-interface-programs) |  |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/factom-amd64.deb) | 0d684a7c0bf68cfed0170d254d02df8b786fc33d35bf5a6bf539fa008f2b2ea4 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/factom-i386.deb) | ec9bb7954e5c2f6d962121d307e7d3eb06ba02734928c3576fbd3866eaf905a1 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
