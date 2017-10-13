@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **0.4.2.10**, released **22 September, 2017**
+The latest version of Factom is version **0.4.2.11**, released **7 October, 2017**
 
 The latest version of Enterprise Wallet is Version **0.2.0.0**, released **7 September, 2017**
 
@@ -46,17 +46,21 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.10/FactomInstall-amd64.msi) | aaf1b6d20f28ee98602d73d30c5f8da17d857d30689ed03a66308eac2196ae68 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.10/FactomInstall-i386.msi) | ef6a26aad176653d6d3fe19cc409aa587d7e7fbbbd4408754a931cfa15f12ae6 |
+| Windows 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/tree/db0bb012e597f497d7a7dd3b091d20ee5592f063#factom-command-line-interface-programs) |  |
+| Windows 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/tree/db0bb012e597f497d7a7dd3b091d20ee5592f063#factom-command-line-interface-programs) |  |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/004d0b75082255ef26b608c857c9f598d18c7f9d/README.md#factom-command-line-interface-programs) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.10/factom-amd64.deb) | 348422b6f86faebc9e895f512ecbc36099d15bac99cfdebe61e8103114d4f96e |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.10/factom-i386.deb) | 644c4ddffae2f1e20f076f547ebf8ee1771230429b7fa212f000ec9b5aab7ea2 |
+| Linux (Ubuntu/Debian) 64bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/tree/db0bb012e597f497d7a7dd3b091d20ee5592f063#factom-command-line-interface-programs) |  |
+| Linux (Ubuntu/Debian) 32bit | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/tree/db0bb012e597f497d7a7dd3b091d20ee5592f063#factom-command-line-interface-programs) |  |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
 
-Source code archive: [factom_source_v0.4.2.10.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.10/factom_source_v0.4.2.10.zip)
+Source code archive: [factom_source_v0.4.2.11.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/factom_source_v0.4.2.11.zip)
 
+
+## Release notes for v0.4.2.11
+- [fix] Status call returned error messages when factomd was booting.
+- [fix] Refactor unreachable code paths for messages during node startup.
 
 ## Release notes for v0.4.2.10
 - [fix] Reconfigured internal handling of API processing JSON fields to ensure consistency
