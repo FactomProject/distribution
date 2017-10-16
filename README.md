@@ -2,7 +2,7 @@
 
 The latest version of Factom is version **0.4.2.11**, released **7 October, 2017**
 
-The latest version of Enterprise Wallet is Version **0.2.0.0**, released **7 September, 2017**
+The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
 
@@ -12,11 +12,17 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 | OS | Enterprise Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.2.8/enterprise-wallet-setup-amd64.exe) | e069903edc03c9d24938f83cd853982d525596f65d462d172af96934ab95b355 |
-| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.8/enterprise-wallet-setup.dmg) | c6885ba3e78993e913ef51a6fcfb0066cb32ea7d420f960e7d33ffe347b7eddc |
-| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.8/enterprise-wallet-setup-amd64.deb) | 671cd69f64ff395ce58fa14742323b238f799ed9f857d6b1acf95bf89b37ee97 |
-| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.8/enterprise-wallet-linux.zip) | f187236d6968f1625216d034225305087edd56968f8f1081372725953fcca70b |
+| Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/enterprise-wallet-setup-amd64.exe) | 6b6248da07a3a3d7a60480f99013b0e35f09a3ace484569bb24f44730d61ff70 |
+| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/enterprise-wallet-setup.dmg) | 4af4a6ded4a74e8e38e194d9648248314d8671ed381e35f0e969b87625f1d601 |
+| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/enterprise-wallet-setup-amd64.deb) | 22c7bce469e5f2d1051a4d9c6ad5d94cf2b79ce3f7cf6073f7e971fb692b44e5 |
+| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/enterprise-wallet-linux.zip) | ce0ab4bf4d446bf5a3c5b0b25d68719d6dffa1005ad31781a0da3719c088111f |
 
+
+#### Release notes for v0.2.1
+- [new] added splash screen displaying license
+
+Known issue:
+If the zip based linux wallet is run as a fresh install, a blank white screen is shown on startup.
 
 #### Release notes for v0.2.0.0
 - [new] added a password protected, encrypted wallet option
