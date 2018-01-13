@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **0.4.2.11**, released **7 October, 2017**
+The latest version of Factom is version **0.4.2.17**, released **5 January, 2018**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,17 +52,45 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/FactomInstall-amd64.msi) | f5b92e74345d685b55d7d37a1d53a68464af014643efb9a76f1b3aa2e99085f7 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/FactomInstall-i386.msi) | 863feb84453d00a05453bf031fb865ad82d3b2e44e760df3da54bac66206afb6 |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/FactomInstall-amd64.msi) | 5dad2dbc965f45261f710a1e96e895040a6f5fae080759014ee870964f88e38b |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/FactomInstall-i386.msi) | 9b35fbf04ca933d2a99c7138d021be2aa6cc16e0141afd8c8b6166715695be0e |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/004d0b75082255ef26b608c857c9f598d18c7f9d/README.md#factom-command-line-interface-programs) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/factom-amd64.deb) | 0d684a7c0bf68cfed0170d254d02df8b786fc33d35bf5a6bf539fa008f2b2ea4 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/factom-i386.deb) | ec9bb7954e5c2f6d962121d307e7d3eb06ba02734928c3576fbd3866eaf905a1 |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/factom-amd64.deb) | e75bc9543aeca67e4e396ea44447dd4e1504968b440630b49c3c90f5cec69859 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/factom-i386.deb) | ca6e58e72a4a6ce3b58ee71743ce981a00e989fe0d5ec926c6d95d1bc44227c0 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
 
-Source code archive: [factom_source_v0.4.2.11.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/factom_source_v0.4.2.11.zip)
+Source code archive: [factom_source_v0.4.2.17.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/factom_source_v0.4.2.17.zip)
 
+## Release notes for 0.4.2.17
+- [new] Add AdminID type to Admin Block API response
+
+## Release notes for 0.4.2.16
+- [new] Save progress between boots for the 2nd pass (Entry verification)
+- [fix] Check the Entry's content exists in the database not just the key.
+
+## Release notes for 0.4.2.15
+- [new] Cached the marshaled objects to save CPU/RAM
+- [fix] Corrected bug where under heavy traffic, Entries were prevented from being matched with a Commit
+
+## Release notes for 0.4.2.14
+- [fix] Prevented duplicate Entries in edge cases
+- [fix] Prevented Entries from flooding over the network without Commits
+
+## Release notes for 0.4.2.13
+- [new] Added generic key-value store accessors to database
+- [new] Added ability to set which blockheight to begin verifying Entries from on the command line for the 2nd pass
+- [fix] Removed spurious errors complaining about process list duplicates
+
+## Release notes for 0.4.2.12
+- [new] Switched to a logging package compatible with Logstash / Elastic Search
+- [fix] Fixed case where control panel was not displaying the ChainID
+- [fix] Added extra check for replayed messages on startup
+- [fix] Remove unhelpful data from heights API response
+- [fix] Eliminated edge case where Chain could be created with incorrect external ID's (ExtIDs)
+- [fix] Changed capitalization of Transaction, EC block, and Pending Entry API responses
+- [fix] Updated dependencies of various included projects
 
 ## Release notes for v0.4.2.11
 - [fix] Status call returned error messages when factomd was booting.
