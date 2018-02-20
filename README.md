@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **0.4.2.17**, released **5 January, 2018**
+The latest version of Factom is version **0.4.2.19**, released **16 February, 2018**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,16 +52,28 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/FactomInstall-amd64.msi) | 5dad2dbc965f45261f710a1e96e895040a6f5fae080759014ee870964f88e38b |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/FactomInstall-i386.msi) | 9b35fbf04ca933d2a99c7138d021be2aa6cc16e0141afd8c8b6166715695be0e |
+| Windows 64bit | [see previous release](https://github.com/FactomProject/distribution/tree/822092756750a350a2c8923bde936777e513fa06) |  |
+| Windows 32bit | [see previous release](https://github.com/FactomProject/distribution/tree/822092756750a350a2c8923bde936777e513fa06) |  |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/004d0b75082255ef26b608c857c9f598d18c7f9d/README.md#factom-command-line-interface-programs) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/factom-amd64.deb) | e75bc9543aeca67e4e396ea44447dd4e1504968b440630b49c3c90f5cec69859 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/factom-i386.deb) | ca6e58e72a4a6ce3b58ee71743ce981a00e989fe0d5ec926c6d95d1bc44227c0 |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.19/factom-amd64.deb) | 6a548ed186b257ee95caa03ab41f651db0916bab0c3eb06f10b989f89b439d23 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.19/factom-i386.deb) | 77e9b69caa3107a750529cea7f458a78c4042ea60a896d6ccf1d43ffea8efdea |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
 
-Source code archive: [factom_source_v0.4.2.17.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.17/factom_source_v0.4.2.17.zip)
+Source code archive: [factom_source_v0.4.2.19.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.19/factom_source_v0.4.2.19.zip)
+
+## 0.4.2.19
+- [new] Sped up loading EC Block with many (thousands) of Commits per block
+- [new] Refactored to use less CPU when downloading blockchain
+- [fix] Hold Entries which cannot yet be added to blockchain
+
+## 0.4.2.18
+- [new] Updated console to output to file
+- [new] Added DNS resolution to seed and peers file lookups
+- [fix] Resolved rare panic during network restart
+- [fix] Fixed condition where valid acknowledgements were discarded unnecessarily
+- [fix] Reduced the number of times missing messages are asked for
 
 ## Release notes for 0.4.2.17
 - [new] Add AdminID type to Admin Block API response
