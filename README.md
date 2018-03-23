@@ -61,14 +61,25 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 
 
-Source code archive: [factom_source_v0.4.2.19.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.19/factom_source_v0.4.2.19.zip)
+Source code archive: [factom_source_v0.4.2.21.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/factom_source_v0.4.2.21.zip)
 
-## 0.4.2.19
+## Release notes for 0.4.2.21
+- [new] Networking package is now compatible with Logstash / Elastic Search 
+- [new] Reduced overhead when loading large Entry Blocks
+- [new] Reduced overhead when using Control Panel with large Directory Blocks
+
+## Release notes for 0.4.2.20
+- [new] Ensured compatability with Golang 1.10
+- [new] Stopped processing messages before loaded from database finished
+- [fix] Reduced the number of missing message requests sent to peers
+- [fix] Fixed race condition with API
+
+## Release notes for 0.4.2.19
 - [new] Sped up loading EC Block with many (thousands) of Commits per block
 - [new] Refactored to use less CPU when downloading blockchain
 - [fix] Hold Entries which cannot yet be added to blockchain
 
-## 0.4.2.18
+## Release notes for 0.4.2.18
 - [new] Updated console to output to file
 - [new] Added DNS resolution to seed and peers file lookups
 - [fix] Resolved rare panic during network restart
