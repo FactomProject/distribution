@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **0.4.2.19**, released **16 February, 2018**
+The latest version of Factom is version **0.4.2.21**, released **17 March, 2018**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,11 +52,11 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [see previous release](https://github.com/FactomProject/distribution/tree/822092756750a350a2c8923bde936777e513fa06) |  |
-| Windows 32bit | [see previous release](https://github.com/FactomProject/distribution/tree/822092756750a350a2c8923bde936777e513fa06) |  |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/FactomInstall-amd64.msi) | c99dca8f2745224ab80a5c087b6f761e1ce82958c2c32801ab5a905cd61dea19 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/FactomInstall-i386.msi) | 7bf6ccdccae638fc540cdb37f33eda1650c540353957219c28d41c10604c86d3 |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/004d0b75082255ef26b608c857c9f598d18c7f9d/README.md#factom-command-line-interface-programs) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.19/factom-amd64.deb) | 6a548ed186b257ee95caa03ab41f651db0916bab0c3eb06f10b989f89b439d23 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.19/factom-i386.deb) | 77e9b69caa3107a750529cea7f458a78c4042ea60a896d6ccf1d43ffea8efdea |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/factom-amd64.deb) | 31a3308efd0f988024258388f782c0eae5fa9f89300b45a99dd94f2b885dae44 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/factom-i386.deb) | cb253298b738a354af9f6bf67b8e47b50b4d0ac1f1c365df248ccb45a76bed3e |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
