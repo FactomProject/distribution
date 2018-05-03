@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **0.4.2.21**, released **17 March, 2018**
+The latest version of Factom is version **5.0.0**, released **1 May, 2018**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,16 +52,32 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/FactomInstall-amd64.msi) | c99dca8f2745224ab80a5c087b6f761e1ce82958c2c32801ab5a905cd61dea19 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/FactomInstall-i386.msi) | 7bf6ccdccae638fc540cdb37f33eda1650c540353957219c28d41c10604c86d3 |
-| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) or use [earlier release](https://github.com/FactomProject/distribution/blob/004d0b75082255ef26b608c857c9f598d18c7f9d/README.md#factom-command-line-interface-programs) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/factom-amd64.deb) | 31a3308efd0f988024258388f782c0eae5fa9f89300b45a99dd94f2b885dae44 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/factom-i386.deb) | cb253298b738a354af9f6bf67b8e47b50b4d0ac1f1c365df248ccb45a76bed3e |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.0.0/FactomInstall-amd64.msi) | 4c2b77fef4dbc8f7a19f26974eb9063c22395467c99904069aafb7d3a6ee6737 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.0.0/FactomInstall-i386.msi) | ab05679b164abed3550bb18ad23673682d3ff13ef7af1867fc27315de6a58f60 |
+| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) |  |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.0.0/factom-amd64.deb) | b9f2552ae32ac1ca2353ac7cf9bb29d2b733f8e3f2de300f33a735577bbd2f9f |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.0.0/factom-i386.deb) | 8c3af1fbc85069d6fa688fce004d7cf02abce5283ef3ce65d19624b9a3fa9a22 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
 
-Source code archive: [factom_source_v0.4.2.21.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.21/factom_source_v0.4.2.21.zip)
+Source code archive: [factom_source_v5.0.0.zip](https://github.com/FactomProject/distribution/releases/download/v5.0.0/factom_source_v5.0.0.zip)
+
+## Release notes for 5.0.0
+**This is a required upgrade.**  Older versions of software will not download new blocks from the network.
+
+- [new] Added new more reliable faulting algorithm
+- [new] Added coinbase output to Authority Servers
+- [new] Added command line option for config file location
+- [new] Added `exclusive_in` flag to limit incoming p2p connections
+- [new] Updated Identity and Authority structures, needing a full chain rescan for updated savestate.
+- [fix] Fixed potential race condition in filter
+- [fix] Improved peer error handling
+- [fix] Included many other stability updates
+
+## Release notes for 0.4.2.22
+- [fix] Fixed potential deadlock in validation loop
+- [fix] corrected bug where commits were not following efficient control flow
 
 ## Release notes for 0.4.2.21
 - [new] Networking package is now compatible with Logstash / Elastic Search 
@@ -268,18 +284,7 @@ Idle time CPU usage has been decreased for times after factomd boot and syncs.
 Now the Enterprise Wallet supports right clicking for copy/pasting etc.
 
 
-
-- Workarounds
-
-One known issue is that factomd does not keep up with new blocks if it needs to download many blocks after starting.  The workaround is to start factomd, allow it to download all the blocks so far created.  Close factomd (ctrl+c) and restart it.  it should keep up with blocks after the second start.
-
-
-The blockchain is fairly large and the P2P sync code is not fast.  To expedite the startup time, the first 70k blocks can be downloaded via http.
- https://www.factom.com/assets/site/factom_bootstrap.zip
- SHA256: 2d4d256c337cdabc8f75aa71180c72129f807c365c78356471350ac1e0a4faed
-
-Extract the zip file to your home directory. It will create files in the location: ~/.factom/m2/main-database/ldb/MAIN/factoid_level.db/   Compressed the blockchain is currently about 5 GB and uncompressed is over 9 GB.
-
+## General Notes
 
 factomd is much slower to start on a spinning hard drive, compared to a solid state drive.  It is recommended to save the blockchain on a solid state drive.
 
