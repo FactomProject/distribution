@@ -52,16 +52,30 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.0.0/FactomInstall-amd64.msi) | 4c2b77fef4dbc8f7a19f26974eb9063c22395467c99904069aafb7d3a6ee6737 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.0.0/FactomInstall-i386.msi) | ab05679b164abed3550bb18ad23673682d3ff13ef7af1867fc27315de6a58f60 |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.1.0/FactomInstall-amd64.msi) | 39cf99ca095d382060130c9c6bcd1d4e1ff0fb12214db3a76f1ed32e9722e244 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.1.0/FactomInstall-i386.msi) | 7ad164f25f58c6e04fe0b691631ef64861ba16c8a4f4e0b3400edf7b13ca5d32 |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.0.0/factom-amd64.deb) | b9f2552ae32ac1ca2353ac7cf9bb29d2b733f8e3f2de300f33a735577bbd2f9f |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.0.0/factom-i386.deb) | 8c3af1fbc85069d6fa688fce004d7cf02abce5283ef3ce65d19624b9a3fa9a22 |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.1.0/factom-amd64.deb) | 6598a6ac28cb88f08dd17d6ac414f5ee56198e99d42323d8a85084ebeb455c0e |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.1.0/factom-i386.deb) | 13377bf40468d409c87bdb1865d38734ce7f130759f26a30d8c6ee62f3a3295d |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
+Source code archive: [factom_source_v5.1.0.zip](https://github.com/FactomProject/distribution/releases/download/v5.1.0/factom_source_v5.1.0.zip)
 
-Source code archive: [factom_source_v5.0.0.zip](https://github.com/FactomProject/distribution/releases/download/v5.0.0/factom_source_v5.0.0.zip)
+## Release notes for 5.1.0
+
+- [new] Added broadcast to all peers for election messages to make them more reliable
+- [new] Added ability for the Authority Set Majority to correct coinbase errors during settling period
+- [new] Lowered boot time CPU by not calculating the balancehash while loading from disk (Thank you AlexanderSupersloth)
+
+- [fix] Fixed a bug where an malicious p2p message could cause an Authority Server to panic
+- [fix] Set default fault timeout to 120 seconds
+- [fix] Tagged incoming p2p messages to prevent automatic rebroadcast
+- [fix] Suppressed duplicate sending of commit from a leader, correctly send out a reveal instead
+- [fix] Updated control panel and API to show 100% sync when block is saved
+- [fix] Removed trimming of the process list during faulting to reduce errors during faults
+- [fix] Fixed an elections out of bound panic
+- [fix] Suppressed error with nil messages panicking factomd nodes (Pokemon bug)
 
 ## Release notes for 5.0.0
 **This is a required upgrade.**  Older versions of software will not download new blocks from the network.
