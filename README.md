@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **5.1.0**, released **25 May, 2018**
+The latest version of Factom is version **5.1.1**, released **6 June, 2018**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,15 +52,22 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.1.0/FactomInstall-amd64.msi) | 39cf99ca095d382060130c9c6bcd1d4e1ff0fb12214db3a76f1ed32e9722e244 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.1.0/FactomInstall-i386.msi) | 7ad164f25f58c6e04fe0b691631ef64861ba16c8a4f4e0b3400edf7b13ca5d32 |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.1.1/FactomInstall-amd64.msi) | 25677b9ed319ae4244a7f8cab437e2aa9a7c81755447cbe545f057fa88535c52 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.1.1/FactomInstall-i386.msi) | 0addc453c9e5c5fd8af7f2ea3f0ddc1c39d7fc9b97750065caea9576c454e35a |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.1.0/factom-amd64.deb) | 6598a6ac28cb88f08dd17d6ac414f5ee56198e99d42323d8a85084ebeb455c0e |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.1.0/factom-i386.deb) | 13377bf40468d409c87bdb1865d38734ce7f130759f26a30d8c6ee62f3a3295d |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.1.1/factom-amd64.deb) | 98ca334da7b87ec1e2d482edc288f6278fb0b106016a556dbe5dbd5a01c75b42 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.1.1/factom-i386.deb) | cff2bf6c73c954761598cfecfd7b00a74c4486f48dd346bd5873e23195a9584a |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: [factom_source_v5.1.0.zip](https://github.com/FactomProject/distribution/releases/download/v5.1.0/factom_source_v5.1.0.zip)
+Source code archive: [factom_source_v5.1.1.zip](https://github.com/FactomProject/distribution/releases/download/v5.1.1/factom_source_v5.1.1.zip)
+
+
+## Release notes for 5.1.1
+
+- [new] Factomd runs a database checker tool to check and correct chain heads on boot
+- [new] Updated default compiler to golang 1.10.2
+- [fix] Displays 1 line per commit in the process list
 
 ## Release notes for 5.1.0
 
