@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **5.1.1**, released **6 June, 2018**
+The latest version of Factom is version **5.2.0**, released **26 June, 2018**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,15 +52,28 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.1.1/FactomInstall-amd64.msi) | 25677b9ed319ae4244a7f8cab437e2aa9a7c81755447cbe545f057fa88535c52 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.1.1/FactomInstall-i386.msi) | 0addc453c9e5c5fd8af7f2ea3f0ddc1c39d7fc9b97750065caea9576c454e35a |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.2.0/FactomInstall-amd64.msi) | e9ad7c2cc56e89104cf57ffa9fb9fcb986dc1dc1ab902a83a87f9c97f48adf2d |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.2.0/FactomInstall-i386.msi) | 7b0e302601b5424bec47c42098aac54b69ab685370c8025ff462fd9c04ab896f |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.1.1/factom-amd64.deb) | 98ca334da7b87ec1e2d482edc288f6278fb0b106016a556dbe5dbd5a01c75b42 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.1.1/factom-i386.deb) | cff2bf6c73c954761598cfecfd7b00a74c4486f48dd346bd5873e23195a9584a |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.2.0/factom-amd64.deb) | 64da2d81efa8d571e906c1a0997ccc9a6e9bd9290e18ca31162d1ba830487f17 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.2.0/factom-i386.deb) | b58bbea564d45a51fed1e88e9b0fe71e4fb71831a978793de5ed03bbdb3dbdf0 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: [factom_source_v5.1.1.zip](https://github.com/FactomProject/distribution/releases/download/v5.1.1/factom_source_v5.1.1.zip)
+Source code archive: [factom_source_v5.2.0.zip](https://github.com/FactomProject/distribution/releases/download/v5.2.0/factom_source_v5.2.0.zip)
+
+
+## Release notes for 5.2.0
+
+- [new] Fixed Minute 0 election bug, which contributed to stalls under 5.1.0 (activation scheduled at block 147981)
+- [new] Added ability to activate features at a specific block height
+- [new] Reduced log spamming
+- [new] Added tool to quickly build large blockchain databases
+- [fix] Ensured that a server's EOM actually is sent out under load
+- [fix] Status API returns correct transaction status when asking quickly after server acknowledgement
+- [fix] Tallied correctly the number of fixed chain heads on boot
+- [fix] Corrected potential nil return from the database and the network
+- [fix] Avoided concurrent map access when using both file logging and multiple simulated nodes
 
 
 ## Release notes for 5.1.1
