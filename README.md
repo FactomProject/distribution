@@ -52,15 +52,15 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi]() |  |
-| Windows 32bit | [FactomInstall-i386.msi]() |  |
+| Windows 64bit |  |  |
+| Windows 32bit |  |  |
 | Mac | Please install from [source]() |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb]() |  |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb]() |  |
+| Linux (Ubuntu/Debian) 64bit |  |  |
+| Linux (Ubuntu/Debian) 32bit |  |  |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: [factom_source_v5.4.2.zip]()
+Source code archive: factom_source_v5.4.2.zip
 
 
 ## Release notes for 5.4.2
