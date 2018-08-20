@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **5.4.1**, released **2 August, 2018**
+The latest version of Factom is version **5.4.2**, released **20 August, 2018**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,15 +52,33 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.4.1/FactomInstall-amd64.msi) | fe7d59e72b18e399a2b99be39300d650ab642da4132560cd5e5dd099156f1f02 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.4.1/FactomInstall-i386.msi) | a1302aead785c6ceaa64003e1356640eca5969c8f5111d54fb4269ba3853c120 |
-| Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.4.1/factom-amd64.deb) | b123584f54fcb5dfdfb277d0bf3254a7b259cfe75b0a85114f264f3211c1fcc2 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.4.1/factom-i386.deb) | 63e100fc61a1723bdb5e4fe6c9aca8cbd48b6990b0ffc70450e3f4a69fdf4fc4 |
+| Windows 64bit | [FactomInstall-amd64.msi]() |  |
+| Windows 32bit | [FactomInstall-i386.msi]() |  |
+| Mac | Please install from [source]() |  |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb]() |  |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb]() |  |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: [factom_source_v5.4.1.zip](https://github.com/FactomProject/distribution/releases/download/v5.4.1/factom_source_v5.4.1.zip)
+Source code archive: [factom_source_v5.4.2.zip]()
+
+
+## Release notes for 5.4.2
+- [new] Added API to return multiple FCT and EC balances in one call
+- [new] Refactored p2p network connection management to better handle multiple connections
+- [new] Added ability to toggle log levels if permission enabled in config file/ command line via the control panel
+- [new] Save latest 10 DBstates to disk for debugging, plus added a utility to read them
+- [new] Created a utility to verify balances on individual nodes
+- [fix] Corrected a boundary condition when the EC usage and purchase rate are near equal and near zero EC balances
+- [fix] Improved performance in handling the height of process list.  Code will not fall into recovery mode as frequently, improving performance
+- [fix] Handle repeat p2p connections from the same IP more gracefully
+- [fix] Reduced stalling by allowing replacement of corrupted block signatures
+- [fix] Removed printout every 10 minutes when lacking a config file
+- [fix] Fixed API that gets Entry Commits by TxID to only return processed transactions instead of potentially invalid ones
+
+As part of this release factom-walletd v2.2.13 was released
+- [new] Created new API call to aggregate all wallet balances
+- [new] Added ability to import mnemonic backup to LevelDB wallet 
 
 
 ## Release notes for 5.4.1
