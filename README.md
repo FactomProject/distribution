@@ -52,15 +52,15 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit |  |  |
-| Windows 32bit |  |  |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.4.2/FactomInstall-amd64.msi) | ecaf45af3b2f99888b63ce3c2460e99feac5490bb65348ddd781f846be1e6692 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.4.2/FactomInstall-i386.msi) | 553de21d57e2eb472e7abdcb677ace1985926542455865f80816641498c5a6a9 |
 | Mac | Please install from [source]() |  |
-| Linux (Ubuntu/Debian) 64bit |  |  |
-| Linux (Ubuntu/Debian) 32bit |  |  |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.4.2/factom-amd64.deb) | b1f5eb7a7fc894544d212e9c00ef99e075b7a362b9abf6dc56983f36119fc904 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.4.2/factom-i386.deb) | 9e2b3cb3d9fa5f689927470593b8f499688b73ee39ffc11190652c62f329f613 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: factom_source_v5.4.2.zip
+Source code archive: [factom_source_v5.4.2.zip](https://github.com/FactomProject/distribution/releases/download/v5.4.2/factom_source_v5.4.2.zip)
 
 
 ## Release notes for 5.4.2
