@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **5.4.3**, released **4 September, 2018**
+The latest version of Factom is version **6.0.0**, released **2 October, 2018**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,16 +52,21 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v5.4.3/FactomInstall-amd64.msi) | 2015ef6b5a53bdf0f57eb66d2aa542824c95bf66f9aec19a16cd21c957d9af2e |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v5.4.3/FactomInstall-i386.msi) | 1fdec1b33ee3aee281d72ebe4fec02724be047376a358c8b07b78d998148e28a |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v6.0.0/FactomInstall-amd64.msi) | 94f61f86972412f19ecfa362e92bd301db96b3fac8591a49c737f5f133223ca5 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v6.0.0/FactomInstall-i386.msi) | 329c6b2e9b1922d742da35530a0b122349e9830626da921a5be3e47b52ad0cc1 |
 | Mac | Please install from [source]() |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v5.4.3/factom-amd64.deb) | 4c82f004f498cb710fd58b8a3bbcef45694e6bdb0d1b91157f0318f7f79649a2 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v5.4.3/factom-i386.deb) | 8604c592b552468805c3765547d9df9e5db698bf19332c5305847fc40449738e |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.0.0/factom-amd64.deb) | 1768a4ca55c0bc118660fa3ba96e9f2744f91c28625b85c5bb502f5b0f514745 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.0.0/factom-i386.deb) | c7d5fdf3e1dcdc39bca3f6bb4403fee6518bc632eab9cf9952c0dd57605d21fd |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: [factom_source_v5.4.3.zip](https://github.com/FactomProject/distribution/releases/download/v5.4.3/factom_source_v5.4.3.zip)
+Source code archive: [factom_source_v6.0.0.zip](https://github.com/FactomProject/distribution/releases/download/v6.0.0/factom_source_v6.0.0.zip)
 
+## Release notes for 6.0.0
+**This is a required upgrade.**  Older versions of software will not download new blocks from the network.
+- [fix] Fixed problem where blockchain was stuck at block 160180
+- [fix] Considered blocks saved to database as having been signed
+- [fix] Filtered past process list messages on boot
 
 ## Release notes for 5.4.3
 - [fix] Fixed bug where Audit servers fail to replace a missing Federated server, potentially causing a network stall
