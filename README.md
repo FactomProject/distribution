@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **6.1.0**, released **23 November, 2018**
+The latest version of Factom is version **6.3.2**, released **9 June, 2019**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,15 +52,159 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v6.1.0/FactomInstall-amd64.msi) | 8a58e691af432c642a9a4acc427be681f4d5ae79e8b7c91c5de6cd26a7256692 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v6.1.0/FactomInstall-i386.msi) | 87fb1deb9fdb56ab56e2328db39bb8349e0d46e8fdcba271f11ef04a7672b798 |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v6.3.2/FactomInstall-amd64.msi) | 155942c8486111a7aab75b625712f548e1b3e20107fd79c8104f5efffd15ba27 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v6.3.2/FactomInstall-i386.msi) | 575694e6a08ab5060172c6d24a3de0084088b823425b624fdf971a61e196a933 |
 | Mac | Please install from [source]() |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.1.0/factom-amd64.deb) | 6688accf975375aa81863d5bca144b66d72e78ba2896044ff3e901e83b0b6246 |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.1.0/factom-i386.deb) | 2f36d61af439de4e09d170c0810052dfd9c55ca7ca215a52ad34a1dbedbc1c8d |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.3.2/factom-amd64.deb) | 8ed7a7c1df487c3d2d80f469757b20c08c5e0f33b13ae08bb8ee96ae2a2b63fb |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.3.2/factom-i386.deb) | e23a69b161a694f57ed7f335198570594bd5d9e3b0870e51590478e30139b6f0 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: [factom_source_v6.1.0.zip](https://github.com/FactomProject/distribution/releases/download/v6.1.0/factom_source_v6.1.0.zip)
+Source code archive: [factom_source_v6.3.2.zip](https://github.com/FactomProject/distribution/releases/download/v6.3.2/factom_source_v6.3.2.zip)
+
+
+## Release notes for 6.3.2  (Bond)
+
+- [new] Refactored and reimplemented the 2nd pass download of the blockchain to work better with threading
+- [new] Allowed logging to save the full hash of Entries for better debugging
+
+- [fix] Resolved a bug that would pause the network where leaders would send confusing messages with duplicate acks at the same process list height
+- [fix] Limited a node from rebroadcasting invalid transactions to the network
+- [fix] Stopped deleting EOMs timestamped in the future so that they can can be available when they are needed
+- [fix] Ensure that reveals are validated before being sent to peers reducing denial of service potential
+- [fix] Keep leaders from getting into a mode where they are continually in Sync mode with poorly set clock on another Federated server, slowing down transaction processing
+- [fix] Community Contribution - fixed issue where control panel was showing a flagging progress bar on the 2nd pass blockchain download
+- [fix] Retained some messages that were recieved instead of deleting them shortly before needing them
+- [fix] Avoided panic with edge case where a process list has not yet been created
+- [fix] Fixed an issue where saving the blockchain was slow on machines with slow storage
+- [fix] Eliminated a deadlock potential which could cause a pause and smoothed out message processing
+- [fix] Waited on Commits before handling Reveals preventing a network pause
+- [fix] Allowed messages which are known in the holding queue to be sent out over the network under edge cases
+- [fix] Fixed an off-by-one error with DBSigs being removed from holding allowing factomd to start up more easily under load 
+- [fix] Avoided situation where holding queue backup causing lack of EOM processing
+- [fix] Allowed for higher load simulation by moving load creation to its own thread
+
+People who contributed pull requests to this release:
+Sander Postma
+
+
+## Release notes for 6.3.1 (Crayon)
+
+- [new] Included the grants from round 2019-2
+
+People who contributed pull requests to this release:
+Tor Hogne Paulsen
+
+Note: This version is based on 6.2.0 and did not include updates from 6.2.2
+
+
+## Release notes for 6.2.2 (Filter)
+- [fix] Community Contribution - Resolved a vulnerability which would crash a node with a malformed Election Sync Message
+- [fix] Repopulated the Replay Filter on boot, to stop consensus failures among servers running for less than an hour
+- [fix] Stopped thrashing the CPU when items are in the holding queue
+- [fix] Community Contribution - Removed duplicate file causing package manager problems
+
+People contributing to this release:
+WhoSoup
+Adam S. Levy
+
+
+## Release notes for 6.2.1 (Kraft)
+- [new] Optimized in several ways to speed up loading from the database
+- [new] Updated to golang 1.12
+- [new] Added unit tests to ensure Brain Swapping worked effectively
+
+- [fix] Used the correct height when Brain Swapping to allow in place upgrades
+- [fix] Stopped continually evaluating entries form the last block, lowering CPU usage
+- [fix] Flushed the holding map that unnessicarily filled up while downloading 2nd pass, speeding up blockchain download
+- [fix] Community Contribution - Avoided a network pause with a malformed network message
+- [fix] Corrected a bug where booting a node that was behind in the blockchain would improperly filter messages out, preventing the node from downloading the 2nd pass
+- [fix] Allowed syncing by minutes to proceed without downloading a block first, which will allow followers to follow sooner after boot
+
+People contributing to this release:
+WhoSoup
+
+This release UI experience differs from previous releases so that it can't show how far progress is behind when initially syncing the first pass.
+
+
+## Release notes for 6.2.0 (Butter)
+
+- [new] Included the grants from round 2019-1
+
+People who contributed pull requests to this release:
+Niels Klomp
+
+Note: This version is based on 6.1.0 and did not include updates from 6.1.1
+
+
+## Release notes for 6.1.1
+
+- [new] Community Contribution - Added CORS to API responses to allow cross site scripting in a browser.
+- [new] Community Contribution - Added hostname to control panel to allow more intuitive server monitoring
+- [new] Added code so factomd saves the blockchain state as it boots, speeding up reboots after long continuous runs.
+- [new] Added Diagnostics API to gain insights to a running node.
+- [new] Upgraded to golang 1.11.
+- [new] Modified factomd API call 'current-minute' to also return 'current-block-height'.
+- [new] Created a log debug API for providing better diagnostics during development.
+- [new] Added SimCtl API to the debug API to allow scripting to perform testing procedures
+- [new] Improved greatly the quality and level of log file details to facilitate debugging.
+- [new] Added ability to log the holding queue to investigate certain failure modes.
+- [new] Made logging reopen deleted log files during runtime to allow drive space reclamation without shutting down factomd.
+- [new] Added a wallet to the simulator to enable more complex tests
+- [new] Allowed for export of data for graphing internal data
+- [new] Increased the amount of features tested during development unit testing
+- [new] Added code to avoid crashing in some cases with pokemon bug
+- [new] Allowed the clean up of messages to better diagnose issues
+- [new] Added ability to limit the amount of time a simulation QA test can run before declaring it has failed.
+- [new] Updated the FastbootExport utility to better expose problems with the savestate process
+
+- [fix] Community Contribution - fixed error string out of scope for entryblock panic to print message with some types of errors
+- [fix] Fixed election in minute 9 which caused the leader who was voted out to only follow by blocks and never accept the updated authority set.
+- [fix] Coinbase cancel now takes a majority of Authority servers rather than the majority of Federated servers.
+- [fix] Updated the way savestate files are created to reduce consensus failures under certain conditions.
+- [fix] Fixed panic where factomd was crashing complaining about missing identity entry blocks while rebooting during the 2nd pass download.
+- [fix] Found bug where the internal state cloning function was creating an incomplete clone.
+- [fix] Allowed old dbsigs to be removed from process list
+- [fix] Fixed a stall condition that causes a panic on boot
+- [fix] Fixed a bug where under some circumstances a newtwork could not boot if the last block saved to the database is over an hour old
+- [fix] Fixed issue where on Windows in some configurations the config files were not found.
+- [fix] Fixed bug where GetVirtualServers call can falls in a period between block generation causing panics.
+- [fix] Updated EC purchase method in simulator because the earlier version didn't handle high loads
+- [fix] Fixed simulation tests that could fail due to not waiting long enough for peers to catch up
+- [fix] Made system Status Changes available to the control panel 
+- [fix] Allowed execution of individual tests instead of just the entire suite.
+- [fix] Added logging for API level transactions
+- [fix] Fixed ProcessBlocks failure on long-running servers
+- [fix] Re-added the controlpanelsettings flag which had gotten lost in a bad merge.
+- [fix] Blocked old DBState messages, which can block forward progress in a stall situation.
+- [fix] Removed replay data from savestate, reducing memory allocation.
+- [fix] Changed default logging to faulting|badmsgs
+- [fix] Fixed bug in GetVirtualServers() in which would cause a panic in uncommon situations.
+- [fix] Fixed out of order execution of DBstates which could cause nodes to panic
+- [fix] Ignored useless depricated p2p messages entryblockresponse and missingentryblocks
+- [fix] Removed attack vector with unmarshalling, thanks to Peckshield for responsible disclosure.  https://peckshield.com/about.html?lang=en
+
+Factom-walletd v2.2.15
+
+- [new] Added encryption to the wallet database to allow security for wallet files on disk.
+- [new] Added Identity handling to wallet
+- [new] Added CORS to API responses to allow cross site scripting in a browser.
+- [fix] Community Contribution - Fixed non authenticated calls to factomd in method 'wallet-balances'
+- [fix] Community Contribution - Allowed remote https factomd
+- [fix] Community Contribution - Increased efficiency when getting transactions in a range of blocks
+
+Factom-cli v2.2.12
+
+- [new] Added more display options for displaying height, for better scripting
+- [new] Added support to unlock an encrypted factom-walletd
+- [new] Added ability to handle Identities in wallet 
+
+People who contributed pull requests to this release:
+Paul Bernier
+Adam S Levy
+Who Soup
+
+Note: Factomd release 6.1.1 was not released for general use.  Version 6.3.2 was the first general release to include these updates.
 
 
 ## Release notes for 6.1.0
