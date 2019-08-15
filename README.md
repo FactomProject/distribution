@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **6.3.2**, released **9 June, 2019**
+The latest version of Factom is version **6.3.3**, released **26 July, 2019**
 
 The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
 
@@ -52,15 +52,62 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v6.3.2/FactomInstall-amd64.msi) | 155942c8486111a7aab75b625712f548e1b3e20107fd79c8104f5efffd15ba27 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v6.3.2/FactomInstall-i386.msi) | 575694e6a08ab5060172c6d24a3de0084088b823425b624fdf971a61e196a933 |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v6.3.3/FactomInstall-amd64.msi) | 7eca6869804e106db691882af992c48b3e2eb9f9511a8f9d1be4a4126606d937 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v6.3.3/FactomInstall-i386.msi) | 8e3314a49839e8cf79d98321c6b1c835eb29d3ab491a4d646b1da34fb4ce9562 |
 | Mac | Please install from [source]() |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.3.2/factom-amd64.deb) | 8ed7a7c1df487c3d2d80f469757b20c08c5e0f33b13ae08bb8ee96ae2a2b63fb |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.3.2/factom-i386.deb) | e23a69b161a694f57ed7f335198570594bd5d9e3b0870e51590478e30139b6f0 |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.3.3/factom-amd64.deb) | 1615d6121094bbb811066bff22dd98f9b62d328de83379f7a01c506f941fa75b |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.3.3/factom-i386.deb) | 74ab5f9228010b2c8b9c4f997575676ebc486606cb2a55a39340ef62d0fb3ea1 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: [factom_source_v6.3.2.zip](https://github.com/FactomProject/distribution/releases/download/v6.3.2/factom_source_v6.3.2.zip)
+Source code archive: [factom_source_v6.3.3.zip](https://github.com/FactomProject/distribution/releases/download/v6.3.3/factom_source_v6.3.3.zip)
+
+
+## Release notes for 6.3.3  (Parchment)
+
+- [new] Optimized block loading from the network, to download more efficiently when initially getting the blockchain
+- [new] Introduced Dependent Holding to allow node to understand order of operations to increase performance as well as to prepare for sharding 
+- [new] Started Optimistic Entry Writing, which spreads database writes over the entire block period which will reduce slowdowns at minute 1 under high load
+- [new] Batched dbstate downloads from the network to increase efficiency when downloading the blockchain
+- [new] Created anchors API to allow for insight into ethereum anchoring.  Deprecated optional anchor field in recipts API
+- [new] Community Contribution - Use different muxes for various web services to not overlap the various web services factomd provides	
+- [new] Community Contribution - Add configuration ability to the peer connection limit to allow users to increase or decrease the number of peers they connect to.
+- [new] Added ability to specify where log file outputs are written in the debugregex to ease collection of log data
+- [new] Made version and git commit settable from Goland to help with development
+
+- [fix] Resolved a bug where the state is calculated incorrectly which can cause identities and coinbase errors when factomd is stopped at blocks divisible by 1000
+- [fix] Fixed a problem where some blocks are processed twice when loading from the database, causing incorrect balances to be calculated
+- [fix] Community Contribution - Don't panic when brainswapping an Audit server
+- [fix] Community Contribution - Close local TCP handler when connection drops to better handle error conditions with transient p2p connections
+- [fix] Community Contribution - Added if booted from disk to diagnostics API to allow outside programs to know when the 1st pass has been fully processed from disk.	
+- [fix] Community Contribution - Optimized performance when not debugging by letting Runtimelog respect its own enabled setting
+- [fix] Community Contribution - Fixed CrossBoot replay garbage collection which never ended to use less resources with cross boot replay filter
+- [fix] Community Contribution - Finished Election Sync fix to more effectively clean up sync message handling
+- [fix] Community Contribution - Made some legibility improvements
+- [fix] Prevented DBStateCatchup from asking for dbstates that don't exist
+- [fix] Fixed a bug in holding using the Ack messages that could uselessly cause faulting immediately after boot
+- [fix] Fixed Authority JSON unmarshalling for coinbase and efficiency fields
+- [fix] Now return message requests from nodes with all zeros loaded into their config file
+- [fix] Caught a new style of Pokemon bug found with MessageBase
+- [fix] Resolved race condition panic when loading the database and connected to mainnet
+- [fix] Repaired balance checking tool to determine if a local database is corrupted
+- [fix] Resolved race condition with DBStateCatchupList so there downloading the blockchain is now thread safe
+- [fix] Fixed null pointer exception when checking for commit payments, which was panicking when a null process list was created
+- [fix] Refactored sim testing to allow more reliable testing in automation
+- [fix] Refined some unit test code for local wallet simulations
+- [fix] Added more simulation testing scenarios for better testing of brain swap testing for checking for backwards-incompatible changes
+- [fix] Moved FilterAPI to the debug API to limit the scope of the testing tool
+- [fix] Made tests for the FilterAPI so that regression tests can run without race conditions
+- [fix] Stopped leaking memory when Dependant holding items are found when downloading a DBstate
+- [fix] Reduced CPU utilization when calling time.now() multiple times when handling p2p peers
+- [fix] Fixed some CircleCI simtests
+- [fix] Improved scripts for reading logs when diagnosing QA problems
+
+People who contributed pull requests to this release:
+
+Who Soup
+Sander Postma
+Thomas Meier
 
 
 ## Release notes for 6.3.2  (Bond)
