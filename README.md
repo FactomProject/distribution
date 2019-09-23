@@ -2,7 +2,7 @@
 
 The latest version of Factom is version **6.3.3**, released **26 July, 2019**
 
-The latest version of Enterprise Wallet is Version **0.2.1**, released **16 October, 2017**
+The latest version of Enterprise Wallet is Version **0.3.1**, released **19 September, 2019**
 
 Install guide located [here](https://docs.factom.com/wallet#install-factom-federation-ff).
 
@@ -12,11 +12,46 @@ Install guide located [here](https://docs.factom.com/wallet#install-factom-feder
 
 | OS | Enterprise Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/enterprise-wallet-setup-amd64.exe) | 6b6248da07a3a3d7a60480f99013b0e35f09a3ace484569bb24f44730d61ff70 |
-| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/enterprise-wallet-setup.dmg) | 4af4a6ded4a74e8e38e194d9648248314d8671ed381e35f0e969b87625f1d601 |
-| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/enterprise-wallet-setup-amd64.deb) | 22c7bce469e5f2d1051a4d9c6ad5d94cf2b79ce3f7cf6073f7e971fb692b44e5 |
-| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v0.4.2.11/enterprise-wallet-linux.zip) | ce0ab4bf4d446bf5a3c5b0b25d68719d6dffa1005ad31781a0da3719c088111f |
+| Windows 64bit | [enterprise-wallet-setup-amd64.exe](https://github.com/FactomProject/distribution/releases/download/v6.3.1/enterprise-wallet-setup-amd64.exe) | 9f56e9a8639d60212fb697a896ba182ceb351a2a5efe145e38422d0f35360df1 |
+| Mac |  [enterprise-wallet-setup.dmg](https://github.com/FactomProject/distribution/releases/download/v6.3.1/enterprise-wallet-setup.dmg) | 12864f556b1e21d88d0f7cf384959ccd34602a4ea6b133fe6daa9262e845e0ff |
+| Linux (Ubuntu/Debian) 64bit | [enterprise-wallet-setup-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.3.1/enterprise-wallet-setup-amd64.deb) | eff646583d1a69140a91553f0b7e7dcf9b3f75934abb63be9e5adfac5f94b2ac |
+| Linux (Redhat/Centos) | [enterprise-wallet-linux.zip](https://github.com/FactomProject/distribution/releases/download/v6.3.1/enterprise-wallet-linux.zip) | 0ca6c882196a2dfc637cd17ce53042b27c915f70a2e5f37ce601670e567ed5fe |
 
+
+#### Release notes for v0.3.1
+Frontend Changes:
+* General
+    * logos updated to new Factom logo
+* Launcher
+    * some wording changed (transfering factoids and footer)
+* Wallet
+    * Wording changes
+    * FCT/EC logos replaced with text
+    * Yellow (+) button on Transactions/Address Book now always popped out
+      for visibility
+    * Settings
+        * Sync Method revamped to include Factomd Open Node and https support
+          for the courtesy node
+        * Custom input allows entry of the scheme, just prefix the address
+          with "http://" or "https://" (For localhost https support, please
+          refer to the factomd.conf settings)
+        * New default factdom endpoint (open node)
+        * "Custom" API Endpoint now sanitizes input into accepted format
+       (Prepends http:// if no scheme specified, removes trailing slashes)
+    * Send Factoids / Buy EC
+        * No longer requires you to click a button to preview the transaction,
+          updates as you type
+        * Clicking send now takes you to a confirmation prompt
+        * Wording changes of error messages and some of the UI elements
+        * Address Book popout now allows you to click on an address to select it
+    * Address Book and other popups open faster
+    
+Backend Changes:
+* Dramatic speed improvements to the "Transaction" tab after the first initial
+  loading. For more details see: 
+  https://github.com/FactomProject/factom/issues/85
+* https support
+* Temporary (60 seconds) caching of balance requests to reduce factomd requests
 
 #### Release notes for v0.2.1
 - [new] added splash screen displaying license
