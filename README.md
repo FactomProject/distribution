@@ -87,8 +87,8 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi]() |  |
-| Windows 32bit | [FactomInstall-i386.msi]() |  |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v6.5.0/FactomInstall-amd64.msi) | 1f69ebf4dbeb8f9ff42f9a0a20197c74611e1af151b1ca2cc9aa6ce9de139bb7 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v6.3.3/FactomInstall-i386.msi) | 397a1a2e3a3fefa83c05abc8dc57dbbf90430ae8fc9612b362e9be3e96f31e56 |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) |  |
 | Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0/factom-amd64.deb) | be996e0f06fe2b5dcec8d6a82df867395f255932e4a4cb991f38fcd374c5161d |
 | Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0/factom-i386.deb) | c1f39736e3fadc806e4ecbd39484e27cae7849d6296a6d66d818b95bd21be95a |
