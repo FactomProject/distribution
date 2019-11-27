@@ -1,6 +1,6 @@
 ## Factom Binaries
 
-The latest version of Factom is version **6.3.3**, released **26 July, 2019**
+The latest version of Factom is version **6.5.0**, released **26 November, 2019**
 
 The latest version of Enterprise Wallet is Version **0.3.1**, released **19 September, 2019**
 
