@@ -87,15 +87,65 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v6.3.3/FactomInstall-amd64.msi) | 7eca6869804e106db691882af992c48b3e2eb9f9511a8f9d1be4a4126606d937 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v6.3.3/FactomInstall-i386.msi) | 8e3314a49839e8cf79d98321c6b1c835eb29d3ab491a4d646b1da34fb4ce9562 |
+| Windows 64bit | [FactomInstall-amd64.msi]() |  |
+| Windows 32bit | [FactomInstall-i386.msi]() |  |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.3.3/factom-amd64.deb) | 1615d6121094bbb811066bff22dd98f9b62d328de83379f7a01c506f941fa75b |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.3.3/factom-i386.deb) | 74ab5f9228010b2c8b9c4f997575676ebc486606cb2a55a39340ef62d0fb3ea1 |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0/factom-amd64.deb) | be996e0f06fe2b5dcec8d6a82df867395f255932e4a4cb991f38fcd374c5161d |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0/factom-i386.deb) | c1f39736e3fadc806e4ecbd39484e27cae7849d6296a6d66d818b95bd21be95a |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: [factom_source_v6.3.3.zip](https://github.com/FactomProject/distribution/releases/download/v6.3.3/factom_source_v6.3.3.zip)
+Source code archive: [factom_source_v6.5.0.zip](https://github.com/FactomProject/distribution/releases/download/v6.3.3/factom_source_v6.5.0.zip)
+
+## Release notes for 6.5.0 (Confetti)
+- [new] Included the grants from round 2019-4
+- [fix] Reduce CPU usage introduced with timing fix
+- [fix] Allow a 20 minute restart window instead of 1 hour
+
+People who contributed pull requests to this release:
+
+Nolan Bauer
+Niels Klomp
+
+
+## Release notes for 6.4.5 (Rolling)
+- [fix] Allow use of port forwarders without specifying header information
+- [fix] Fixed an edge case on timing of Commits causing disagreements of transaction valididty
+
+People who contributed pull requests to this release:
+
+Who Soup
+
+
+## Release notes for 6.4.4 (Post-it)
+- [fix] Allow a node to ask for missing messages in more circumstances, helping with network restarts and helping followers stay in sync.
+
+
+## Release notes for 6.4.3 (Xuan-fix)
+- [fix] Relaxed restrictions to allow Federated servers minute boundries to stay synchronized
+
+
+## Release notes for 6.4.2 (Xuan)
+- [new] Lots of bugfixes and updates
+
+Note: This version is based on 6.3.3 and includes earlier updates.
+
+
+## Release notes for 6.4.1 (Cotton)
+- [fix] Fixed a problem where balances were calculated incorrectly due to the some blocksbeing processed twice
+- [fix] Expanded window that block signatures would be considered valid to assist with network starts
+
+Note: This version is based on 6.4.0 and did not include updates from 6.3.3
+
+
+## Release notes for 6.4.0 (Origami)
+- [new] Included the grants from round 2019-3
+
+People who contributed pull requests to this release:
+
+Tor Hogne Paulsen
+
+Note: This version is based on 6.3.2 and did not include updates from 6.3.3
 
 
 ## Release notes for 6.3.3  (Parchment)
