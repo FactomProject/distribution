@@ -95,7 +95,7 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 
 
-Source code archive: [factom_source_v6.5.0.zip](https://github.com/FactomProject/distribution/releases/download/v6.3.3/factom_source_v6.5.0.zip)
+Source code archive: [factom_source_v6.5.0.zip](https://github.com/FactomProject/distribution/releases/download/v6.5.0/factom_source_v6.5.0.zip)
 
 ## Release notes for 6.5.0 (Confetti)
 - [new] Included the grants from round 2019-4
