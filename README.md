@@ -87,15 +87,39 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 
 | OS | Factomd Installer | sha256sum |
 |----|-----|-----|
-| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v6.5.0/FactomInstall-amd64.msi) | 1f69ebf4dbeb8f9ff42f9a0a20197c74611e1af151b1ca2cc9aa6ce9de139bb7 |
-| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v6.5.0/FactomInstall-i386.msi) | 397a1a2e3a3fefa83c05abc8dc57dbbf90430ae8fc9612b362e9be3e96f31e56 |
+| Windows 64bit | [FactomInstall-amd64.msi](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/FactomInstall-amd64.msi) | d4c50ae0fefdc9df5b7c5ddee00e3da088ceeeea0f5ae4c1ab6972bf827c20f8 |
+| Windows 32bit | [FactomInstall-i386.msi](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/FactomInstall-i386.msi) | d4c50ae0fefdc9df5b7c5ddee00e3da088ceeeea0f5ae4c1ab6972bf827c20f8 |
 | Mac | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) |  |
-| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0/factom-amd64.deb) | be996e0f06fe2b5dcec8d6a82df867395f255932e4a4cb991f38fcd374c5161d |
-| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0/factom-i386.deb) | c1f39736e3fadc806e4ecbd39484e27cae7849d6296a6d66d818b95bd21be95a |
+| Linux (Ubuntu/Debian) 64bit | [factom-amd64.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom-amd64.deb) | d8ec2ae3876eae07a709021f10f16e369560c45cacec21cab437f2b6217b34e2 |
+| Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom-i386.deb) | f2806f62ceffa2bedfdec662f4bcea3082b10db4bbcb859db5df7933fcbaf620 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
+| Linux (ARM64) | [factom-arm64.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom-arm64.deb) | 242171d5a033fd2fa29446b8e44e625936776ef8921b4bcf267ebf4b8c2a1b45 |
+| Linux (ARM32) | [factom-arm32.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom-arm32.deb) | 34c2d2f9e2c89009f73d540160e3caf8820fa3c8f3a1ce4d788baa17f2039f9f |
 
 
-Source code archive: [factom_source_v6.5.0.zip](https://github.com/FactomProject/distribution/releases/download/v6.5.0/factom_source_v6.5.0.zip)
+Source code archive: [factom_source_v6.5.0_wallet.zip](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom_source_v6.5.0_wallet.zip)
+
+## Release notes for factom-walletd 2.2.16 & factom-cli 2.2.13 (Girder)
+Factom-walletd v2.2.16
+- [new] Allow factom-walletd to use a config file loaded from a configurable path.
+- [new] Added a new "sign-data" method to the wallet that takes an FA address and arbitrary byte data as parameters.
+- [fix] Allows factom-walletd discover if it is on a new blockchain
+- [fix] Improve and organize code in factom lib code base
+
+Factom-cli v2.2.13
+- [new] Added command completion for factom-cli commands
+- [new] Added factom-cli commands for authorities,diagnostic, current-minute, network
+- [new] Added factom-cli commands for get ablock, ecblock, fblock, dblock, get tps
+- [new] Added factom-cli display options for get entry, get firstentry, get head 
+
+
+People who contributed pull requests to this release:
+
+Adam S Levy
+
+Paul Bernier
+
+WhoSoup
 
 ## Release notes for 6.5.0 (Confetti)
 - [new] Included the grants from round 2019-4
@@ -105,6 +129,7 @@ Source code archive: [factom_source_v6.5.0.zip](https://github.com/FactomProject
 People who contributed pull requests to this release:
 
 Nolan Bauer
+
 Niels Klomp
 
 
