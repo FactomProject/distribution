@@ -94,7 +94,7 @@ See our [blog post](https://www.factom.com/blog/encrypted-enterprise-wallet) for
 | Linux (Ubuntu/Debian) 32bit | [factom-i386.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom-i386.deb) | f2806f62ceffa2bedfdec662f4bcea3082b10db4bbcb859db5df7933fcbaf620 |
 | Linux (Redhat/Centos) | Please install from [source](https://github.com/FactomProject/FactomDocs/blob/master/installFromSourceDirections.md) | |
 | Linux (ARM64) | [factom-arm64.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom-arm64.deb) | 242171d5a033fd2fa29446b8e44e625936776ef8921b4bcf267ebf4b8c2a1b45 |
-| Linux (ARM32) | [factom-arm32.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom-arm32.deb) | 34c2d2f9e2c89009f73d540160e3caf8820fa3c8f3a1ce4d788baa17f2039f9f |
+| Linux (ARM32) | [factom-arm32.deb](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom-arm32.deb) | af1577df939975dde378dc0bf875ddef8e9c92ca3e6969d17b4e803a9ee706f4 |
 
 
 Source code archive: [factom_source_v6.5.0_wallet.zip](https://github.com/FactomProject/distribution/releases/download/v6.5.0_wallet/factom_source_v6.5.0_wallet.zip)
